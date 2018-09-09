@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import 'bulma/css/bulma.css'
+import "bulma/css/bulma.css";
 
 import Board from "./components/Board.component";
 
@@ -10,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-demo">
-          <Board/>
+          <Board />
         </div>
       </div>
     );
