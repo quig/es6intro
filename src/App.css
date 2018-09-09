@@ -9,3 +9,18 @@
 .App-demo {
   font-size: large;
 }
+
+h1 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  line-height: 1.125 !important;
+  padding-bottom: 2rem !important;
+}
+p {
+  text-align: justify !important;
+}
+
+.explanation,
+.navigation {
+  padding: 3rem;
+}

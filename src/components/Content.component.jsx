@@ -3,7 +3,7 @@ import React from "react";
 export default ({ step }) => {
   return (
     <div>
-      <div>{step.explanation()}</div>
+      <div className="explanation">{step.explanation()}</div>
       <iframe
         title="codeSandbox"
         src={step.url}
