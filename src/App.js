@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import Content from "./components/Content.component";
+import Board from "./components/Board.component";
 
 class App extends Component {
   render() {
@@ -12,9 +12,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          <Content content={<div>first content</div>} />
-        </p>
+        <div className="App-intro">
+          <Board/>
+        </div>
       </div>
     );
   }
