@@ -46,9 +46,7 @@ export default class Board extends React.Component {
               Précedent
             </button>
           </div>
-
           <div className="column">{this.state.currentId + 1}</div>
-
           <div className="column">
             <button
               className="button is-primary"
