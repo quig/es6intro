@@ -30,63 +30,102 @@ const exos = [
             creating an account, you can keep a copy of your work.
           </p>
           <p>
-            Have fun and please, don't choose <code>'Bulbasaur'</code> :/
+            Have fun and please, don't choose <code>'Bulbizarre'</code> :/
           </p>
         </div>
       </div>
     )
   },
   {
-    url: "https://codesandbox.io/embed/v6lyo318m0",
+    url:
+      "https://codesandbox.io/embed/v6lyo318m0?verticallayout=1&codemirror=1&highlights=2,3,4",
     explanation: () => (
-      <div>
+      <div className="content">
         <h1>Variables and Pokemon</h1>
         <p>
-          First, let's create some variables and bind to them values. Choose
-          your first pokemon among <code>'Bulbasaur'</code>,{" "}
-          <code>'Charmander'</code>
-          and <code>'Squirtle'</code>. Then give them a <strong>number</strong>{" "}
-          representing their initial attack points (below 30). Finally using{" "}
-          <code>true</code> or <code>false</code>, tell us if your pokemon is
-          the best.
+          Programming consists in the manipulation of data. First, let's create
+          some variables and bind to them values.
         </p>
+        <div>
+          <ul>
+            <li>
+              Bind to the variable <code>pokemon</code> a value among{" "}
+              <code>'Bulbizarre'</code>, <code>'Salamèche'</code>
+              and <code>'Carapuce'</code>
+            </li>
+            <li>
+              Bind to <code>attackPoints</code> a number below or equal to 30
+            </li>
+            <li>
+              Bind to <code>isMyPokemonTheBestEver</code> the keyword{" "}
+              <code>true</code>
+            </li>
+          </ul>
+        </div>
       </div>
     )
   },
   {
-    url: "https://codesandbox.io/embed/jjvkr0xmo9",
+    url:
+      "https://codesandbox.io/embed/jjvkr0xmo9?verticallayout=1&codemirror=1&highlights=6",
     explanation: () => (
-      <div>
+      <div className="content">
         <h1>A bit of maths</h1>
         <p>
-          Pikachu wants to use thunder on the evil Meowth. Thunder is a powerful
-          attack with a power of 120 !!! Using the folowing formula{" "}
-          <pre> Damage = Power * Attack / Defense</pre> Calculate the damage
-          done on the Meowth.
+          Pikachu wants to use thunder on the evil Miaouss. Thunder is a
+          powerful attack with a power of 120 !!! Using the folowing formula{" "}
+          <code> Damage = Power * Attack / Defense</code> Calculate the damage
+          done on the Miaouss.
         </p>
+        <div>
+          <ul>
+            <li>
+              Use arithmetic operations to compute the result and bind it to the
+              variable <code>damage</code>
+            </li>
+          </ul>
+        </div>
       </div>
     )
   },
   {
-    url: "https://codesandbox.io/embed/8x33rv4o50",
+    url:
+      "https://codesandbox.io/embed/8x33rv4o50?verticallayout=1&codemirror=1",
     explanation: () => (
-      <div>
+      <div className="content">
         <h1>Everything is Object !!!</h1>
         <p>
           Pikachu is super cool, he has plenty of attacks and also statistics
           such as health points, attack, defense, speed. We could create several
           variables for each but instead, let's create an{" "}
-          <strong>Object</strong> containing all we need. I want a Pikachu with
-          a 100 attack points, 80 defense points, a speed of 110 and a list of
-          attack moves including "thunder", "surf" and "fly".
+          <strong>Object</strong> containing all we need.{" "}
         </p>
+        <div>
+          <p>I want a Pikachu with the folowing properties and values: </p>
+          <ul>
+            <li>
+              <code>attack</code> and value <code>100</code>
+            </li>
+            <li>
+              <code>defense</code> and value <code>80</code>
+            </li>
+            <li>
+              <code>speed</code> and value <code>110</code>
+            </li>
+            <li>
+              a list of <code>moves</code> moves including{" "}
+              <code>'thunder, 'surf','fly'</code>.
+            </li>
+          </ul>
+        </div>
       </div>
     )
   },
   {
-    url: "https://codesandbox.io/embed/v3154o8495",
+    url:
+      "https://codesandbox.io/embed/v3154o8495?verticallayout=1&codemirror=1",
     explanation: () => (
-      <div>
+      <div className="content">
         <h1>Functions</h1>
         <p>
           We could Calculate the damage every time we need but the actual
@@ -94,13 +133,22 @@ const exos = [
           <code>damage(attacker, defender, move)</code> and make us of it to
           launch thunder on Meowth.
         </p>
+        <div>
+          <ul>
+            <li>
+              Create a function <code>damage(attacker, defender, move)</code>{" "}
+              calculating the damage (number)
+            </li>
+          </ul>
+        </div>
       </div>
     )
   },
   {
-    url: "https://codesandbox.io/embed/0329r4rkrv",
+    url:
+      "https://codesandbox.io/embed/0329r4rkrv?verticallayout=1&codemirror=1",
     explanation: () => (
-      <div>
+      <div className="content">
         <h1>Time to attack</h1>
         <p>
           The evil rocket team has a new pokemon !!! A geodude !!! Thunder won't

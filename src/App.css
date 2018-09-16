@@ -19,6 +19,9 @@ h1 {
 p {
   text-align: justify !important;
 }
+ul {
+  text-align: justify;
+}
 
 .explanation,
 .navigation {
