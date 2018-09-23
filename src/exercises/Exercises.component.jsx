@@ -157,29 +157,41 @@ const exos = [
       <div className="content">
         <h1>Everything is Object !!!</h1>
         <p>
-          Pikachu is super cool, he has plenty of attacks and also statistics
-          such as health points, attack, defense, speed. We could create several
-          variables for each but instead, let's create an{" "}
-          <strong>Object</strong> containing all we need.{" "}
+          You may have noticed in one of the previous exercices. We created a
+          binding to represent the name of the pokemon Pikachu. Pikachu has also
+          attack points, health points, defense points, experience points and
+          much more information. For those of you familiar with Pokemon, the
+          game has over 151 pokemons each with its own caracteristics. Imagine
+          the hussle, creating as many variables as there are pokemons with
+          different names for each variable.
         </p>
-        <div>
-          <p>I want a Pikachu with the folowing properties and values: </p>
-          <ul>
-            <li>
-              <code>attack</code> and value <code>100</code>
-            </li>
-            <li>
-              <code>defense</code> and value <code>80</code>
-            </li>
-            <li>
-              <code>speed</code> and value <code>110</code>
-            </li>
-            <li>
-              a list of <code>moves</code> moves including{" "}
-              <code>'thunder, 'surf','fly'</code>.
-            </li>
-          </ul>
-        </div>
+        <pre>
+          let namePikachu = "Pikachu"; let attackPikcahu = 100; let
+          defensePikachu = 20; let nameMiaouss = "Miaouss"; let attackMiaouss =
+          50; ...
+        </pre>
+        <p>
+          <strong>YOUR TURN !!!</strong> Pikachu is super cool, he has plenty of
+          attacks and also statistics such as health points, attack, defense,
+          speed. We could create several variables for each but instead, let's
+          create an <strong>Object</strong> containing all we need.{" "}
+        </p>
+        <p>I want a Pikachu with the folowing properties and values: </p>
+        <ul>
+          <li>
+            <code>attack</code> and value <code>100</code>
+          </li>
+          <li>
+            <code>defense</code> and value <code>80</code>
+          </li>
+          <li>
+            <code>speed</code> and value <code>110</code>
+          </li>
+          <li>
+            a list of <code>moves</code> moves including{" "}
+            <code>'thunder, 'surf','fly'</code>.
+          </li>
+        </ul>
       </div>
     )
   },
