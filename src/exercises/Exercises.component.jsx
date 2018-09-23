@@ -1,6 +1,8 @@
 import React from "react";
 import oak from "../assets/professoroak.png";
 import exo1 from "../assets/exo1-example.png";
+import exo4 from "../assets/exo4-example.png";
+import exo4_2 from "../assets/exo4-example2.png";
 
 const exos = [
   {
@@ -26,9 +28,9 @@ const exos = [
           <p>
             Each exercice will have a description of the expecting tasks and a
             codesandbox where you can code the anwser and see directly the
-            outcome. Tests are automaticcaly run when the code is being
-            modified. You can also open the codesandbox in another tab, then by
-            creating an account, you can keep a copy of your work.
+            outcome. Tests are automaticaly run when the code is being modified.
+            You can also open the codesandbox in another tab, then by creating
+            an account, you can keep a copy of your work.
           </p>
           <p>
             Have fun and please, don't choose <code>'Bulbizarre'</code> :/
@@ -155,7 +157,7 @@ const exos = [
       "https://codesandbox.io/embed/8x33rv4o50?verticallayout=1&codemirror=1&previewwindow=tests",
     explanation: () => (
       <div className="content">
-        <h1>Everything is Object !!!</h1>
+        <h1>(Almost) Everything is an object !!!</h1>
         <p>
           You may have noticed in one of the previous exercices. We created a
           binding to represent the name of the pokemon Pikachu. Pikachu has also
@@ -170,6 +172,54 @@ const exos = [
           defensePikachu = 20; let nameMiaouss = "Miaouss"; let attackMiaouss =
           50; ...
         </pre>
+        <p>
+          JavaScript comes with a handy solution called <strong>Classes</strong>
+          , but we will come to that later. In the meantime, I'd like to
+          introduce you to something called <strong>Objects</strong>. Objects
+          allow us to group values—including other objects—to build more complex
+          structures.
+        </p>
+        <p>
+          Values of the type object are arbitrary collections of properties. One
+          way to create an object is by using braces as an expression.
+        </p>
+        <pre>
+          let red = &#123;
+          {"\n"} name: "red",
+          {"\n"} badges: 3,
+          {"\n"} pokemons: ["pikachu", "rondoudou", "canarticho"]
+          {"\n"}
+          &#125;
+        </pre>
+        <p>
+          You can then access the property by using the dot-notation, as follow:
+        </p>
+        <img src={exo4} alt="Example 4" />
+        <p>
+          You notice that pokemons is slightly different from the usual types we
+          have seen until now. We call this an <strong>Array</strong>. An{" "}
+          <strong>Array</strong> is a Data Set used specifically for storing
+          sequences of values. It is called an array and is written as a list of
+          values between square brackets, separated by commas.
+        </p>
+        <p>
+          The notation for getting at the elements inside an array also uses
+          square brackets.
+        </p>
+        <img src={exo4_2} alt="Example 4-2" />
+        <p>
+          The first index of an array is zero, not one. So the first element is
+          retrieved with primeNumbers[0]. Zero-based counting has a long
+          tradition in technology and in certain ways makes a lot of sense, but
+          it takes some getting used to. Think of the index as the amount of
+          items to skip, counting from the start of the array.
+        </p>
+        <p>
+          Arrays come with a special property called length which gives us the
+          number of elements in the array. So to retrieve the last element,
+          knowing the index starts at 0, I just have to seek{" "}
+          <code>primeNumbers[primeNumbers.length - 1]</code>
+        </p>
         <p>
           <strong>YOUR TURN !!!</strong> Pikachu is super cool, he has plenty of
           attacks and also statistics such as health points, attack, defense,

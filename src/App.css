@@ -16,11 +16,10 @@ h1 {
   line-height: 1.125 !important;
   padding-bottom: 2rem !important;
 }
-p {
+p,
+ul,
+pre {
   text-align: justify !important;
-}
-ul {
-  text-align: justify;
 }
 
 .explanation,
