@@ -38,7 +38,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/v6lyo318m0?verticallayout=1&codemirror=1&highlights=2,3,4",
+      "https://codesandbox.io/embed/v6lyo318m0?verticallayout=1&codemirror=1&previewwindow=tests&highlights=2,3,4",
     explanation: () => (
       <div className="content">
         <h1>Variables and Pokemon</h1>
@@ -67,7 +67,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/jjvkr0xmo9?verticallayout=1&codemirror=1&highlights=6",
+      "https://codesandbox.io/embed/jjvkr0xmo9?verticallayout=1&codemirror=1&previewwindow=tests&highlights=6",
     explanation: () => (
       <div className="content">
         <h1>A bit of maths</h1>
@@ -90,7 +90,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/8x33rv4o50?verticallayout=1&codemirror=1",
+      "https://codesandbox.io/embed/8x33rv4o50?verticallayout=1&codemirror=1&previewwindow=tests",
     explanation: () => (
       <div className="content">
         <h1>Everything is Object !!!</h1>
@@ -123,7 +123,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/v3154o8495?verticallayout=1&codemirror=1",
+      "https://codesandbox.io/embed/v3154o8495?verticallayout=1&codemirror=1&previewwindow=tests",
     explanation: () => (
       <div className="content">
         <h1>Functions</h1>
@@ -146,7 +146,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/0329r4rkrv?verticallayout=1&codemirror=1",
+      "https://codesandbox.io/embed/0329r4rkrv?verticallayout=1&codemirror=1&previewwindow=tests",
     explanation: () => (
       <div className="content">
         <h1>Time to attack</h1>
