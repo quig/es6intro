@@ -384,12 +384,10 @@ const exos = [
         </p>
         <ul>
           <li>
-            Change <code>filterPokemon</code> into a list returning a list of
-            pokemons with less than 8 characters. Example,{" "}
-            <code>
-              filterPokemon(["doduo","roucarnage" ]) should return
-              ["roucarnage"]
-            </code>
+            Change <code>filterPokemon</code> into a function returning a list
+            of pokemons with less than 8 characters. Example,{" "}
+            <code>filterPokemon(["doduo","roucarnage" ])</code> should return{" "}
+            <code>["doduo"]</code>
           </li>
         </ul>
       </div>
