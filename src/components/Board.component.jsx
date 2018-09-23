@@ -43,7 +43,7 @@ export default class Board extends React.Component {
               onClick={this.previous}
               disabled={disablePrevious}
             >
-              Précedent
+              Previous
             </button>
           </div>
           <div className="column">{this.state.currentId + 1}</div>
@@ -53,7 +53,7 @@ export default class Board extends React.Component {
               onClick={this.next}
               disabled={disableNext}
             >
-              Suivant
+              Next
             </button>
           </div>
         </div>

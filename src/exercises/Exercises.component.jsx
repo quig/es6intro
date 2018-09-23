@@ -35,6 +35,13 @@ const exos = [
           <p>
             Have fun and please, don't choose <code>'Bulbizarre'</code> :/
           </p>
+          <p>
+            <em>
+              Want to know more about JavaScript ? Take a look at
+              <a href="https://eloquentjavascript.net"> Eloquent JavaScript</a>,
+              our source for inspiration for this tutorial :)
+            </em>
+          </p>
         </div>
       </div>
     )
@@ -265,6 +272,126 @@ const exos = [
             </li>
           </ul>
         </div>
+      </div>
+    )
+  },
+  {
+    url:
+      "https://codesandbox.io/embed/7w42om5z81?verticallayout=1&codemirror=1&previewwindow=tests&highlights=9",
+    explanation: () => (
+      <div className="content">
+        <h1>Control flow</h1>
+        <p>
+          When your program contains more than one statement, the statements are
+          executed as if they are a story, from top to botom.
+        </p>
+        <pre>
+          let number = 2;
+          {"\n"}
+          let square = number * number;
+          {"\n"}
+          console.log(square); //4
+        </pre>
+        <p>
+          However, you may want to change the code depending on the situation.
+          For this, you can use what is called a conditional statement.
+          Conditional execution is created with the <strong>if</strong> keyword
+          in JavaScript. In the simple case, we want some code to be executed
+          if, and only if, a certain condition holds. We might, for example,
+          want to show the square of the input only if the input is positive.
+        </p>
+        <pre>
+          let number = 2;
+          {"\n"}
+          if(number &#62; 0) &#123;
+          {"\n"} let square = number * number;
+          {"\n"} console.log(square); //4
+          {"\n"}
+          &#125;
+        </pre>
+        <p>
+          If you change number by a string like "dog", nothing will be
+          displayed.
+        </p>
+        <p>
+          The statement after the if is wrapped in braces (&#123;and &#125;) in
+          this example. The braces can be used to group any number of statements
+          into a single statement, called a block. You could also have omitted
+          them if the block contained a single statement, but to avoid having to
+          think about whether they are needed, most JavaScript programmers use
+          them in every wrapped statement like this.
+        </p>
+        <p>
+          You often won’t just have code that executes when a condition holds
+          true, but also code that handles the other case. This alternate path
+          is represented by the second arrow in the diagram. You can use the{" "}
+          <strong>else</strong> keyword, together with <strong>if</strong>, to
+          create two separate, alternative execution paths.
+        </p>
+        <pre>
+          let number = "dog";
+          {"\n"}
+          if(!Number.isNaN(number)) &#123;
+          {"\n"} let square = number * number;
+          {"\n"} console.log(square);
+          {"\n"}
+          &#125;else&#123;
+          {"\n"} console.log("Ce n'est pas un nombre"); //Ce n'est pas un nombre
+          {"\n"}
+          &#125;
+        </pre>
+        <p>
+          If you have more than two paths to choose from, you can “chain”
+          multiple if/else pairs together. Here’s an example:
+        </p>
+        <pre>
+          let number = 0;
+          {"\n"}
+          if(number &#60; 0) &#123;
+          {"\n"} console.log("Number is negative");
+          {"\n"}
+          &#125;else if(number &#62; 0)&#123;
+          {"\n"} console.log("Number is positive");
+          {"\n"}
+          &#125;else&#123;
+          {"\n"} console.log("Number is 0"); //Number is 0{"\n"}
+          &#125;
+        </pre>
+        <p>
+          <strong>YOUR TURN !!!</strong> Pikachu is getting stronger, he wants
+          to learn a new move. However, pokemons are not allowed to have more
+          than 4 different moves. Change the code to check if pikachu can indeed
+          learn a new move.
+        </p>
+        <ul>
+          <li>
+            if moves have already 4 moves, bind to <code>result</code> the value{" "}
+            <code>true</code>, otherwise bind the value
+            <code>false</code>
+          </li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    url:
+      "https://codesandbox.io/embed/qxvon4lw6q?verticallayout=1&codemirror=1&previewwindow=tests&highlights=2",
+    explanation: () => (
+      <div className="content">
+        <h1>Control flow, second Part</h1>
+        <p>
+          <strong>YOUR TURN !!!</strong>
+        </p>
+        <ul>
+          <li>
+            Change <code>filterPokemon</code> into a list returning a list of
+            pokemons with less than 8 characters. Example,{" "}
+            <code>
+              filterPokemon(["doduo","roucarnage" ]) should return
+              ["roucarnage"]
+            </code>
+          </li>
+        </ul>
       </div>
     )
   },
