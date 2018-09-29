@@ -492,6 +492,16 @@ const exos = [
           to double the damage if the attacker uses surf. OK destroy the rocket
           team by launching a surf on all members one by one !!!
         </p>
+        <ul>
+          <li>
+            Create a function{" "}
+            <code>damage(pikachu, rocketTeamMember, attackName)</code> with
+            pikachu and rocketTeamMember being objects and attackName a string.
+            If "thunder" is used on a "ground" type, damage returns 0. If "surf"
+            is used on a ground type, the damage is doubled.
+          </li>
+          <li> Use surf on all team members using a loop.</li>
+        </ul>
       </div>
     )
   }
