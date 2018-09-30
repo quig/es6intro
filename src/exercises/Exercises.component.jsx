@@ -1,8 +1,9 @@
 import React from "react";
 import oak from "../assets/professoroak.png";
-import exo1 from "../assets/exo1-example.png";
-import exo4 from "../assets/exo4-example.png";
-import exo4_2 from "../assets/exo4-example2.png";
+import strings from "../assets/strings.png";
+import objects from "../assets/objects.png";
+import arrays from "../assets/arrays.png";
+import literals from "../assets/template-literals.png";
 
 const exos = [
   {
@@ -35,12 +36,10 @@ const exos = [
           <p>
             Have fun and please, don't choose <code>'Bulbizarre'</code> :/
           </p>
-          <p>
-            <em>
-              Want to know more about JavaScript ? Take a look at
-              <a href="https://eloquentjavascript.net"> Eloquent JavaScript</a>,
-              our source for inspiration for this tutorial :)
-            </em>
+          <p className="is-italic">
+            Want to know more about JavaScript ? Take a look at
+            <a href="https://eloquentjavascript.net"> Eloquent JavaScript</a>,
+            our source for inspiration for this tutorial :)
           </p>
         </div>
       </div>
@@ -73,12 +72,10 @@ const exos = [
           Now I have created my variable, I can use it in various places in my
           program.
         </p>
-        <img src={exo1} alt="Example 1" />
-        <p>
-          <em>
-            The previous output can be obtained through the console view in your
-            browser. In chrome, just use Ctrl + Shift + J or ⌥ + ⌘ + J
-          </em>
+        <img src={strings} alt="Example 1" />
+        <p className="is-italic">
+          The previous output can be obtained through the console view in your
+          browser. In chrome, just use Ctrl + Shift + J or ⌥ + ⌘ + J
         </p>
         <p>In JavaScript, we define 3 main kinds of values </p>
         <ul>
@@ -207,7 +204,7 @@ const exos = [
         <p>
           You can then access the property by using the dot-notation, as follow:
         </p>
-        <img src={exo4} alt="Example 4" />
+        <img src={objects} alt="Object example" />
         <p>
           You notice that pokemons is slightly different from the usual types we
           have seen until now. We call this an <strong>Array</strong>. An{" "}
@@ -219,7 +216,7 @@ const exos = [
           The notation for getting at the elements inside an array also uses
           square brackets.
         </p>
-        <img src={exo4_2} alt="Example 4-2" />
+        <img src={arrays} alt="Array example" />
         <p>
           The first index of an array is zero, not one. So the first element is
           retrieved with primeNumbers[0]. Zero-based counting has a long
@@ -618,6 +615,62 @@ const exos = [
           </li>
           <li>
             Define a <code>metamorphe</code> that can change
+          </li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    url:
+      "https://codesandbox.io/embed/ox7xl02yrq?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3",
+    explanation: () => (
+      <div className="content">
+        <h1>Template literal</h1>
+        <p>
+          Backtick-quoted strings have the ability to embed values. When you
+          write something inside <code>$&#123;&#125;</code> in a template
+          literal, its result will be computed, converted to a string, and
+          included at that position.
+        </p>
+        <img src={literals} alt="Template literal example" />
+        <p>
+          <strong>YOUR TURN !!!</strong>
+        </p>
+        <ul>
+          <li>
+            change the function to return "Go &#60;the pokemon name&#62;, with
+            your attack &#60;the pokemon attack + 5&#62;"
+          </li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    url:
+      "https://codesandbox.io/embed/4rywynr394?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
+    explanation: () => (
+      <div className="content">
+        <h1>Classes</h1>
+        <p className="is-italic">
+          We enter a slightly more advanced side of programming and JavaScript.
+          Since the format of this lecture is not appropriate for a complete
+          understanding of the language, we will try to keep it simple. However,
+          if you are looking for more depth, we strongly advise you to read{" "}
+          <a href="https://eloquentjavascript.net"> Eloquent JavaScript</a>{" "}
+          where most content of this tutorial come from.
+        </p>
+        <p>
+          {" "}
+          A class defines the shape of a type of object—what methods and
+          properties it has. Such an object is called an instance of the class.
+        </p>
+        <p>
+          <strong>YOUR TURN !!!</strong>
+        </p>
+        <ul>
+          <li>
+            Create a class <code>Pokemon</code> with the following properties:{" "}
+            <code>attack</code>
           </li>
         </ul>
       </div>
