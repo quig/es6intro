@@ -556,8 +556,8 @@ const exos = [
       <div className="content">
         <h1>Time to attack</h1>
         <p>
-          The evil rocket team has a new pokemon !!! A geodude (racaillou) !!!
-          Thunder won't work on him as he is a ground pokemon. Modify the damage
+          The evil rocket team has a new pokemon !!! A Racaillou !!! Thunder
+          won't work on him as he is a ground pokemon. Modify the damage
           function to return 0 if thunder is used on a ground defender. Then
           modify it again to double the damage if the attacker uses surf on
           ground pokemons. OK destroy the rocket team by launching a surf on all
@@ -578,7 +578,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/13jvn3nl23?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
+      "https://codesandbox.io/embed/13jvn3nl23?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3",
     explanation: () => (
       <div className="content">
         <h1>Const and let</h1>
@@ -587,9 +587,11 @@ const exos = [
           create bindings, in a way similar to <code>let</code>.
         </p>
         <pre>
-          var name = "Ayda";
-          {"\n"} const greeting = "Hello ";
-          {"\n"} console.log(greeting + name);
+          var name = "Pierre";
+          {"\n"}
+          const greeting = "Hello ";
+          {"\n"}
+          console.log(greeting + name); // Hello Pierre
         </pre>
         <p>
           The first, <code>var</code> (short for “variable”), is the way
