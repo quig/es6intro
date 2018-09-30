@@ -29,10 +29,23 @@ export default class Board extends React.Component {
     }
   };
 
+  changePage = (idPage) => {
+    this.setState({ currentId: idPage });
+  };
+
   render() {
     const currentStep = this.getStep();
     const disablePrevious = !this.existPrevious();
     const disableNext = !this.existNext();
+    const pageNav = exos.map((element, index) => (
+      <button key={index} 
+            className="button is-secondary"
+            onClick={() => this.changePage(index)}
+            disabled={!!(index === this.state.currentId) }>
+            {index + 1}
+      </button>
+      ));
+    
 
     return (
       <div className="navigation">
@@ -46,7 +59,12 @@ export default class Board extends React.Component {
               Previous
             </button>
           </div>
-          <div className="column">{this.state.currentId + 1}</div>
+          <div className="column page-nav">
+            {pageNav && pageNav}
+          </div>
+          
+          
+          
           <div className="column">
             <button
               className="button is-primary"
