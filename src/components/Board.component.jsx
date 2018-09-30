@@ -29,9 +29,9 @@ export default class Board extends React.Component {
     }
   };
 
-  handleSelectChange = (event) => {
+  handleSelectChange = event => {
     const idPage = event.target.value;
-    this.setState({ currentId: idPage});
+    this.setState({ currentId: Number(idPage) });
   };
 
   render() {
@@ -42,8 +42,7 @@ export default class Board extends React.Component {
       <option key={element.title} value={index}>
         {element.title}
       </option>
-      ));
-    
+    ));
 
     return (
       <div className="navigation">
@@ -57,15 +56,18 @@ export default class Board extends React.Component {
               Previous
             </button>
           </div>
-          
+
           <div className="column">
             <div className="select">
-              <select value={this.state.currentId} onChange={this.handleSelectChange}>
+              <select
+                value={this.state.currentId}
+                onChange={this.handleSelectChange}
+              >
                 {listSelect}
               </select>
             </div>
           </div>
-          
+
           <div className="column">
             <button
               className="button is-primary"
