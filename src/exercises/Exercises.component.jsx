@@ -8,6 +8,7 @@ import literals from "../assets/template-literals.png";
 const exos = [
   {
     url: "",
+    title: "Introduction",
     explanation: () => (
       <div className="content">
         <h1>Welcome to the world of Pokemon</h1>
@@ -48,6 +49,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/v6lyo318m0?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=2,3,4",
+    title: "Bindings",
     explanation: () => (
       <div className="content">
         <h1>Bindings and Pokemon</h1>
@@ -122,6 +124,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/jjvkr0xmo9?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=6",
+    title: "A bit of maths",
     explanation: () => (
       <div className="content">
         <h1>A bit of maths</h1>
@@ -165,6 +168,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/8x33rv4o50?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
+    title: "Objects",
     explanation: () => (
       <div className="content">
         <h1>(Almost) Everything is an object !!!</h1>
@@ -258,6 +262,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/v3154o8495?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
+    title: "Functions",
     explanation: () => (
       <div className="content">
         <h1>Functions</h1>
@@ -361,6 +366,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/7w42om5z81?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=9",
+    title: "Control flow - if, else",
     explanation: () => (
       <div className="content">
         <h1>Control flow</h1>
@@ -459,6 +465,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/qxvon4lw6q?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=2",
+    title: "Control flow - loops",
     explanation: () => (
       <div className="content">
         <h1>Control flow, second Part</h1>
@@ -549,6 +556,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/0329r4rkrv?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
+    title: "Time for some practice",
     explanation: () => (
       <div className="content">
         <h1>Time to attack</h1>
@@ -576,6 +584,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/13jvn3nl23?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3",
+    title: "Const and let",
     explanation: () => (
       <div className="content">
         <h1>Const and let</h1>
@@ -623,6 +632,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/ox7xl02yrq?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3",
+    title: "Template literal",
     explanation: () => (
       <div className="content">
         <h1>Template literal</h1>
@@ -648,6 +658,7 @@ const exos = [
   {
     url:
       "https://codesandbox.io/embed/4rywynr394?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
+    title: "Classes",
     explanation: () => (
       <div className="content">
         <h1>Classes</h1>
