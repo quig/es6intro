@@ -466,6 +466,34 @@ const exos = [
       <div className="content">
         <h1>Control flow, second Part</h1>
         <p>
+          Consider a program that outputs all even numbers from 0 to 12. One way
+          to write this is as follows:
+        </p>
+        <pre>
+          console.log(0); {"\n"}
+          console.log(2); {"\n"}
+          console.log(4); {"\n"}
+          console.log(6); {"\n"}
+          console.log(8); {"\n"}
+          console.log(10); {"\n"}
+          console.log(12);
+        </pre>
+        <p>
+          That works, but the idea of writing a program is to make something
+          less work, not more. If we needed all even numbers less than 1,000,
+          this approach would be unworkable. What we need is a way to run a
+          piece of code multiple times. This form of control flow is called a
+          loop.
+        </p>
+        <pre>
+          let number = 0; {"\n"}
+          while (number &#8804; 12) &#123; {"\n"}
+          console.log(number);
+          {"\n"}
+          number = number + 2; {"\n"}
+          &#125;
+        </pre>
+        <p>
           <strong>YOUR TURN !!!</strong>
         </p>
         <ul>
