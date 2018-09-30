@@ -48,7 +48,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/v6lyo318m0?verticallayout=1&codemirror=1&previewwindow=tests&highlights=2,3,4",
+      "https://codesandbox.io/embed/v6lyo318m0?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=2,3,4",
     explanation: () => (
       <div className="content">
         <h1>Bindings and Pokemon</h1>
@@ -124,7 +124,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/jjvkr0xmo9?verticallayout=1&codemirror=1&previewwindow=tests&highlights=6",
+      "https://codesandbox.io/embed/jjvkr0xmo9?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=6",
     explanation: () => (
       <div className="content">
         <h1>A bit of maths</h1>
@@ -167,7 +167,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/8x33rv4o50?verticallayout=1&codemirror=1&previewwindow=tests",
+      "https://codesandbox.io/embed/8x33rv4o50?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
     explanation: () => (
       <div className="content">
         <h1>(Almost) Everything is an object !!!</h1>
@@ -260,7 +260,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/v3154o8495?verticallayout=1&codemirror=1&previewwindow=tests",
+      "https://codesandbox.io/embed/v3154o8495?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
     explanation: () => (
       <div className="content">
         <h1>Functions</h1>
@@ -363,7 +363,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/7w42om5z81?verticallayout=1&codemirror=1&previewwindow=tests&highlights=9",
+      "https://codesandbox.io/embed/7w42om5z81?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=9",
     explanation: () => (
       <div className="content">
         <h1>Control flow</h1>
@@ -461,7 +461,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/qxvon4lw6q?verticallayout=1&codemirror=1&previewwindow=tests&highlights=2",
+      "https://codesandbox.io/embed/qxvon4lw6q?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=2",
     explanation: () => (
       <div className="content">
         <h1>Control flow, second Part</h1>
@@ -551,7 +551,7 @@ const exos = [
   },
   {
     url:
-      "https://codesandbox.io/embed/0329r4rkrv?verticallayout=1&codemirror=1&previewwindow=tests",
+      "https://codesandbox.io/embed/0329r4rkrv?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
     explanation: () => (
       <div className="content">
         <h1>Time to attack</h1>
@@ -572,6 +572,51 @@ const exos = [
             is used on a ground type, the damage is doubled.
           </li>
           <li> Use surf on all team members using a loop.</li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    url:
+      "https://codesandbox.io/embed/13jvn3nl23?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
+    explanation: () => (
+      <div className="content">
+        <h1>Const and let</h1>
+        <p>
+          The words <code>var</code> and <code>const</code> can also be used to
+          create bindings, in a way similar to <code>let</code>.
+        </p>
+        <pre>
+          var name = "Ayda";
+          {"\n"} const greeting = "Hello ";
+          {"\n"} console.log(greeting + name);
+        </pre>
+        <p>
+          The first, <code>var</code> (short for “variable”), is the way
+          bindings were declared in pre-2015 JavaScript. But you will see it
+          less often because it has some confusing properties.
+        </p>
+        <p>
+          The word <code>const</code> stands for constant. It defines a constant
+          binding, which points at the same value for as long as it lives. This
+          is useful for bindings that give a name to a value so that you can
+          easily refer to it later.
+        </p>
+        <p>
+          As a good practice, prefer <code>const</code> if you know your binding
+          won't change in the lifetime of your program, otherwise use{" "}
+          <code>let</code>.
+        </p>
+        <p>
+          <strong>YOUR TURN !!!</strong>
+        </p>
+        <ul>
+          <li>
+            Define a <code>pikachu</code> that cannot change
+          </li>
+          <li>
+            Define a <code>metamorphe</code> that can change
+          </li>
         </ul>
       </div>
     )
