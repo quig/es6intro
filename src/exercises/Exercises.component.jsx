@@ -487,12 +487,54 @@ const exos = [
         </p>
         <pre>
           let number = 0; {"\n"}
-          while (number &#8804; 12) &#123; {"\n"}
-          console.log(number);
+          while (number &#8804; 12) &#123;
+          {"\n"} console.log(number);
+          {"\n"} number = number + 2;
           {"\n"}
-          number = number + 2; {"\n"}
           &#125;
         </pre>
+        <p>
+          A statement starting with the keyword while creates a loop. The word
+          <code>while</code> is followed by an expression in parentheses and
+          then a statement, much like if. The loop keeps entering that statement
+          as long as the expression produces a value that gives true when
+          converted to Boolean.
+        </p>
+        <p>
+          The number binding demonstrates the way a binding can track the
+          progress of a program. Every time the loop repeats, number gets a
+          value that is 2 more than its previous value. At the beginning of
+          every repetition, it is compared with the number 12 to decide whether
+          the program’s work is finished.
+        </p>
+        <p>
+          Many loops follow the pattern shown in the while examples. First a
+          “counter” binding is created to track the progress of the loop. Then
+          comes a while loop, usually with a test expression that checks whether
+          the counter has reached its end value. At the end of the loop body,
+          the counter is updated to track progress.Because this pattern is so
+          common, JavaScript and similar languages provide a slightly shorter
+          and more comprehensive form, the <strong>for loop</strong>.
+        </p>
+        <pre>
+          for (let number = 0; number &#8804; 12; number = number + 2) &#123;
+          {"\n"} console.log(number);
+          {"\n"}
+          &#125;
+        </pre>
+        <p>
+          This program is exactly equivalent to the earlier even-number-printing
+          example. The only change is that all the statements that are related
+          to the “state” of the loop are grouped together after for.
+        </p>
+        <p>
+          The parentheses after a for keyword must contain two semicolons. The
+          part before the first semicolon initializes the loop, usually by
+          defining a binding. The second part is the expression that checks
+          whether the loop must continue. The final part updates the state of
+          the loop after every iteration. In most cases, this is shorter and
+          clearer than a while construct.
+        </p>
         <p>
           <strong>YOUR TURN !!!</strong>
         </p>
@@ -514,11 +556,12 @@ const exos = [
       <div className="content">
         <h1>Time to attack</h1>
         <p>
-          The evil rocket team has a new pokemon !!! A geodude !!! Thunder won't
-          work on him as he is a ground pokemon. Modify the damage function to
-          return 0 if thunder is used on a ground defender. Then modify it again
-          to double the damage if the attacker uses surf. OK destroy the rocket
-          team by launching a surf on all members one by one !!!
+          The evil rocket team has a new pokemon !!! A geodude (racaillou) !!!
+          Thunder won't work on him as he is a ground pokemon. Modify the damage
+          function to return 0 if thunder is used on a ground defender. Then
+          modify it again to double the damage if the attacker uses surf on
+          ground pokemons. OK destroy the rocket team by launching a surf on all
+          members one by one !!!
         </p>
         <ul>
           <li>
