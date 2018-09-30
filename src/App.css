@@ -26,3 +26,8 @@ pre {
 .navigation {
   padding: 3rem;
 }
+
+.page-nav button:disabled {
+  color: white;
+  background-color: blue;
+}
