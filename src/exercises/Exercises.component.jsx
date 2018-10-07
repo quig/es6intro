@@ -5,6 +5,7 @@ import objects from "../assets/objects.png";
 import arrays from "../assets/arrays.png";
 import literals from "../assets/template-literals.png";
 import classes from "../assets/classes.png";
+import ronflex from "../assets/ronflex.gif";
 
 const exos = [
   {
@@ -183,7 +184,7 @@ const exos = [
           different names for each variable.
         </p>
         <pre>
-          let namePikachu = "Pikachu"; let attackPikcahu = 100; let
+          let namePikachu = "Pikachu"; let attackPikachu = 100; let
           defensePikachu = 20; let nameMiaouss = "Miaouss"; let attackMiaouss =
           50; ...
         </pre>
@@ -211,11 +212,12 @@ const exos = [
         </p>
         <img src={objects} alt="Object example" />
         <p>
-          You notice that pokemons is slightly different from the usual types we
-          have seen until now. We call this an <strong>Array</strong>. An{" "}
-          <strong>Array</strong> is a Data Set used specifically for storing
-          sequences of values. It is called an array and is written as a list of
-          values between square brackets, separated by commas.
+          You notice that the property <code>pokemons</code> is slightly
+          different from the usual types we have seen until now. We call this an{" "}
+          <strong>Array</strong>. An <strong>Array</strong> is a Data Set used
+          specifically for storing sequences of values. It is called an array
+          and is written as a list of values between square brackets, separated
+          by commas.
         </p>
         <p>
           The notation for getting at the elements inside an array also uses
@@ -253,8 +255,8 @@ const exos = [
             <code>speed</code> and value <code>110</code>
           </li>
           <li>
-            a list of <code>moves</code> moves including{" "}
-            <code>'thunder, 'surf','fly'</code>.
+            a list of <code>moves</code> moves including <code>'thunder'</code>,{" "}
+            <code>'surf'</code> and <code>'fly'</code>.
           </li>
         </ul>
       </div>
@@ -285,6 +287,11 @@ const exos = [
           {"\n"}
           console.log(square(12)); // → 144
         </pre>
+        <p className="is-italic">
+          console.log() is a function displaying what is given in parameter. Try
+          to run the previous code in the console of your browser to understand
+          its use.
+        </p>
         <p>
           A function is created with an expression that starts with the keyword
           <code>function</code>. Functions have a set of parameters (in this
@@ -404,12 +411,13 @@ const exos = [
           displayed.
         </p>
         <p>
-          The statement after the if is wrapped in braces (&#123;and &#125;) in
-          this example. The braces can be used to group any number of statements
-          into a single statement, called a block. You could also have omitted
-          them if the block contained a single statement, but to avoid having to
-          think about whether they are needed, most JavaScript programmers use
-          them in every wrapped statement like this.
+          The statement after the if is wrapped in braces{" "}
+          <strong>&#123;</strong> and <strong>&#125;</strong> in this example.
+          The braces can be used to group any number of statements into a single
+          statement, called a block. You could also have omitted them if the
+          block contained a single statement, but to avoid having to think about
+          whether they are needed, most JavaScript programmers use them in every
+          wrapped statement like this.
         </p>
         <p>
           You often won’t just have code that executes when a condition holds
@@ -448,6 +456,18 @@ const exos = [
           &#125;
         </pre>
         <p>
+          Another way to write simple conditional statement is the use of
+          ternary condition. Written as follow{" "}
+          <strong>condition ? expr1 : expr2</strong> {"\n"}
+          If condition is true, the operator returns the value of expr1;
+          otherwise, it returns the value of expr2.
+        </p>
+        <pre>number > 0 ? "Number is positive" : "Number is negative" </pre>
+        <p>
+          It is often used in day to day JavaScript programming as a simple
+          alternative to the standard if/else statement.
+        </p>
+        <p>
           <strong>YOUR TURN !!!</strong> Pikachu is getting stronger, he wants
           to learn a new move. However, pokemons are not allowed to have more
           than 4 different moves. Change the code to check if pikachu can indeed
@@ -471,8 +491,8 @@ const exos = [
       <div className="content">
         <h1>Control flow, second Part</h1>
         <p>
-          Consider a program that outputs all even numbers from 0 to 12. One way
-          to write this is as follows:
+          Consider a program that outputs all even numbers from 0 to 12. Here is
+          one way to write this:
         </p>
         <pre>
           console.log(0); {"\n"}
@@ -484,11 +504,10 @@ const exos = [
           console.log(12);
         </pre>
         <p>
-          That works, but the idea of writing a program is to make something
-          less work, not more. If we needed all even numbers less than 1,000,
-          this approach would be unworkable. What we need is a way to run a
-          piece of code multiple times. This form of control flow is called a
-          loop.
+          That works, but the idea of writing a program is to make less work,
+          not more. If we needed all even numbers less than 1,000, this approach
+          would be unworkable. What we need is a way to run a piece of code
+          multiple times. This form of control flow is called a loop.
         </p>
         <pre>
           let number = 0; {"\n"}
@@ -583,8 +602,7 @@ const exos = [
     )
   },
   {
-    url:
-      "https://codesandbox.io/embed/13jvn3nl23?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3",
+    url: "",
     title: "Const and let",
     explanation: () => (
       <div className="content">
@@ -616,17 +634,8 @@ const exos = [
           won't change in the lifetime of your program, otherwise use{" "}
           <code>let</code>.
         </p>
-        <p>
-          <strong>YOUR TURN !!!</strong>
-        </p>
-        <ul>
-          <li>
-            Define a <code>pikachu</code> that cannot change
-          </li>
-          <li>
-            Define a <code>metamorphe</code> that can change
-          </li>
-        </ul>
+        <p>No practice this time...</p>
+        <img src={ronflex} alt="ronflex" />
       </div>
     )
   },
