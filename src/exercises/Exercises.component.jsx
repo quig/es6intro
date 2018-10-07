@@ -6,6 +6,10 @@ import arrays from "../assets/arrays.png";
 import literals from "../assets/template-literals.png";
 import classes from "../assets/classes.png";
 import ronflex from "../assets/ronflex.gif";
+import foreach from "../assets/foreach.png";
+import filter from "../assets/filter.png";
+import map from "../assets/map.png";
+import composability from "../assets/composability.png";
 
 const exos = [
   {
@@ -661,6 +665,58 @@ const exos = [
             change the function to return "Go &#60;the pokemon name&#62;, with
             your attack &#60;the pokemon attack + 5&#62;"
           </li>
+        </ul>
+      </div>
+    )
+  },
+  {
+    url: "",
+    title: "Higher-order functions",
+    explanation: () => (
+      <div className="content">
+        <h1>Higher-order functions</h1>
+        <p>
+          Functions that operate on other functions, either by taking them as
+          arguments or by returning them, are called higher-order functions. One
+          area where higher-order functions shine is data processing.
+        </p>
+        <h2>For each</h2>
+        <p>
+          {" "}
+          There is a built-in array method, forEach, that will execute a
+          function for each array element.
+        </p>
+        <img src={foreach} alt="foreach example" />
+        <h2>Filter</h2>
+        <p>It filters out the elements in an array that don’t pass a test.</p>
+        <img src={filter} alt="filter example" />
+        <p>
+          The function uses the argument named test, a function value, to fill a
+          “gap” in the computation, the process of deciding which elements to
+          collect. Note how the filter function, rather than deleting elements
+          from the existing array, builds up a new array with only the elements
+          that pass the test. This function is pure. It does not modify the
+          array it is given.
+        </p>
+        <h2>Map</h2>
+        <p>
+          The map method transforms an array by applying a function to all of
+          its elements and building a new array from the returned values. The
+          new array will have the same length as the input array, but its
+          content will have been mapped to a new form by the function.
+        </p>
+        <img src={map} alt="map example" />
+        <h2>Composability</h2>
+        <p>
+          Higher-order functions start to shine when you need to compose
+          operations. Here is an example:
+        </p>
+        <img src={composability} alt="composability example" />
+        <p>
+          <strong>YOUR TURN !!!</strong>
+        </p>
+        <ul>
+          <li />
         </ul>
       </div>
     )
