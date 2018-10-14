@@ -670,7 +670,8 @@ const exos = [
     )
   },
   {
-    url: "",
+    url:
+      "https://codesandbox.io/embed/l5o8n744m?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3",
     title: "Higher-order functions",
     explanation: () => (
       <div className="content">
@@ -713,10 +714,24 @@ const exos = [
         </p>
         <img src={composability} alt="composability example" />
         <p>
+          You can see it as a pipeline: we start with an array of trainers,
+          filter out the ones having a city defined, and only output the name of
+          these trainers.
+        </p>
+        <p className="is-italic">
+          There are others functions not presented here such as{" "}
+          <code>some()</code>, <code>reduce()</code> or find which are also
+          particulary useful in some cases but not presented here. You might
+          want to take a look at this page for more information:{" "}
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">
+            MDN Firefox
+          </a>
+        </p>
+        <p>
           <strong>YOUR TURN !!!</strong>
         </p>
         <ul>
-          <li />
+          <li>Find the names of the dragon pokemons. </li>
         </ul>
       </div>
     )
