@@ -719,10 +719,10 @@ const exos = [
           these trainers.
         </p>
         <p className="is-italic">
-          There are others functions not presented here such as{" "}
-          <code>some()</code>, <code>reduce()</code> or find which are also
-          particulary useful in some cases but not presented here. You might
-          want to take a look at this page for more information:{" "}
+          There are others functions such as <code>some()</code>,{" "}
+          <code>reduce()</code> or find which are also particulary useful in
+          some cases but not presented here. You might want to take a look at
+          this page for more information:{" "}
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">
             MDN Firefox
           </a>
