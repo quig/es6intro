@@ -1,5 +1,5 @@
 import React from 'react'
-import oak from '../assets/professoroak.png'
+import oak from '../../assets/professoroak.png'
 
 const welcome = {
   url: '',

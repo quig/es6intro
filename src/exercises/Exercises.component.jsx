@@ -9,7 +9,7 @@ import foreach from '../assets/foreach.png'
 import filter from '../assets/filter.png'
 import map from '../assets/map.png'
 import composability from '../assets/composability.png'
-import welcome from '../components/Welcome'
+import welcome from './content/Welcome'
 
 const exos = [
   welcome,
