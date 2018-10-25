@@ -1,79 +1,40 @@
-import React from "react";
-import oak from "../assets/professoroak.png";
-import strings from "../assets/strings.png";
-import objects from "../assets/objects.png";
-import arrays from "../assets/arrays.png";
-import literals from "../assets/template-literals.png";
-import classes from "../assets/classes.png";
-import ronflex from "../assets/ronflex.gif";
-import foreach from "../assets/foreach.png";
-import filter from "../assets/filter.png";
-import map from "../assets/map.png";
-import composability from "../assets/composability.png";
+import React from 'react'
+import strings from '../assets/strings.png'
+import objects from '../assets/objects.png'
+import arrays from '../assets/arrays.png'
+import literals from '../assets/template-literals.png'
+import classes from '../assets/classes.png'
+import ronflex from '../assets/ronflex.gif'
+import foreach from '../assets/foreach.png'
+import filter from '../assets/filter.png'
+import map from '../assets/map.png'
+import composability from '../assets/composability.png'
+import welcome from '../components/Welcome'
 
 const exos = [
-  {
-    url: "",
-    title: "Introduction",
-    explanation: () => (
-      <div className="content">
-        <h1>Welcome to the world of Pokemon</h1>
-        <div>
-          <img src={oak} alt="Professeur Chen" />
-        </div>
-        <div>
-          <p>
-            We are so glad to have you here with us in this awesome journey we
-            are about to start together :)
-          </p>
-          <p>
-            Our goal is to introduce you to JavaScript and some awesome things
-            you can do with the language. Don't worry if you've never done
-            programming before, we'll start with the basics. For those of you
-            already familiar with the language, you might want to skip few
-            exercices and try some ES6 features.
-          </p>
-          <p>
-            Each exercice will have a description of the expecting tasks and a
-            codesandbox where you can code the anwser and see directly the
-            outcome. Tests are automaticaly run when the code is being modified.
-            You can also open the codesandbox in another tab, then by creating
-            an account, you can keep a copy of your work.
-          </p>
-          <p>
-            Have fun and please, don't choose <code>'Bulbizarre'</code> :/
-          </p>
-          <p className="is-italic">
-            Want to know more about JavaScript ? Take a look at
-            <a href="https://eloquentjavascript.net"> Eloquent JavaScript</a>,
-            our source for inspiration for this tutorial :)
-          </p>
-        </div>
-      </div>
-    )
-  },
+  welcome,
   {
     url:
-      "https://codesandbox.io/embed/v6lyo318m0?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=2,3,4",
-    title: "Bindings",
+      'https://codesandbox.io/embed/v6lyo318m0?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=2,3,4',
+    title: 'Bindings',
     explanation: () => (
       <div className="content">
         <h1>Bindings and Pokemon</h1>
         <p>
           Programming consists in the manipulation of data. You can create,
           read, write, store, modify data and so much more. As many other
-          programming languages, JavaScript provides a thing called a{" "}
+          programming languages, JavaScript provides a thing called a{' '}
           <strong>binding</strong> or <strong>variable</strong>:
         </p>
         <p>
-          <code>let player = "Red"</code>
+          <code>const player = 'Red'</code>
         </p>
         <p>
-          In this example, the special keywork <strong>let</strong> indicates
+          In this example, the special keywork <strong>const</strong> indicates
           that this sentance is going to define a binding. It is followed by the
           name of the binding, in this case <strong>player</strong> and if we
-          want to immediately give it a value, by an <strong> = </strong>{" "}
-          operator and an expression (here <strong>"Red"</strong>
+          want to immediately give it a value, by an <strong> = </strong>{' '}
+          operator and an expression (here <strong>'Red'</strong>
           ).
         </p>
         <p>
@@ -88,17 +49,17 @@ const exos = [
         <p>In JavaScript, we define 3 main kinds of values </p>
         <ul>
           <li>
-            numbers, which are numeric values written as you would expect{" "}
+            numbers, which are numeric values written as you would expect{' '}
             <code>21</code> or <code>5.009</code> or even <code>2.998e8</code>
           </li>
           <li>
             booleans, written as <code>true</code> or <code>false</code>
           </li>
           <li>
-            strings, representing texts enclosed by quotes{" "}
-            <code>`Blubizarre, utilise fouets lianes`</code>{" "}
-            <code>'Blubizarre rate son attaque'</code>{" "}
-            <code>"Blubizarre est échangé contre un rondoudou"</code>.{" "}
+            strings, representing texts enclosed by quotes{' '}
+            <code>`Bulbizarre, utilise fouets lianes`</code>{' '}
+            <code>'Bulbizarre rate son attaque'</code>{' '}
+            <code>"Bulbizarre est échangé contre un Rondoudou"</code>.{' '}
             <p>
               You can use single quotes, double quotes, or backticks to mark
               strings, as long as the quotes at the start and the end of the
@@ -112,43 +73,81 @@ const exos = [
         </p>
         <ul>
           <li>
-            Bind to the variable <code>pokemon</code> a value among{" "}
-            <code>'Bulbizarre'</code>, <code>'Salamèche'</code>
-            and <code>'Carapuce'</code>
+            Bind to the variable <code>pokemon</code> a value among{' '}
+            <code>Bulbizarre</code>, <code>Salamèche</code>
+            and <code>Carapuce</code>
           </li>
           <li>
             Bind to <code>attackPoints</code> a number below or equal to 30
           </li>
           <li>
-            Bind to <code>isMyPokemonTheBestEver</code> the keyword{" "}
+            Bind to <code>isMyPokemonTheBestEver</code> the keyword{' '}
             <code>true</code>
           </li>
         </ul>
       </div>
-    )
+    ),
+  },
+  {
+    url: '',
+    title: 'Const and let',
+    explanation: () => (
+      <div className="content">
+        <h1>Const and let</h1>
+        <p>
+          The words <code>var</code> and <code>const</code> can also be used to
+          create bindings, in a way similar to <code>let</code>.
+        </p>
+        <pre>
+          var name = "Pierre";
+          {'\n'}
+          const greeting = "Hello ";
+          {'\n'}
+          console.log(greeting + name); // Hello Pierre
+        </pre>
+        <p>
+          The first, <code>var</code> (short for “variable”), is the way
+          bindings were declared in pre-2015 JavaScript. But you will see it
+          less often because it has some confusing properties.
+        </p>
+        <p>
+          The word <code>const</code> stands for constant. It defines a constant
+          binding, which points at the same value for as long as it lives. This
+          is useful for bindings that give a name to a value so that you can
+          easily refer to it later.
+        </p>
+        <p>
+          As a good practice, prefer <code>const</code> if you know your binding
+          won't change in the lifetime of your program, otherwise use{' '}
+          <code>let</code>.
+        </p>
+        <p>No practice this time...</p>
+        <img src={ronflex} alt="ronflex" />
+      </div>
+    ),
   },
   {
     url:
-      "https://codesandbox.io/embed/jjvkr0xmo9?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=6",
-    title: "A bit of maths",
+      'https://codesandbox.io/embed/jjvkr0xmo9?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=6',
+    title: 'A bit of maths',
     explanation: () => (
       <div className="content">
         <h1>A bit of maths</h1>
         <p>
           The main thing to do with numbers is arithmetic. Arithmetic operations
           such as addition or multiplication take two number values and produce
-          a new number from them. Here is what they look like in JavaScript:{" "}
+          a new number from them. Here is what they look like in JavaScript:{' '}
           <code>100+4*11</code>
         </p>
         <p>
-          The <strong>+</strong> and <strong>*</strong> symbols are called{" "}
+          The <strong>+</strong> and <strong>*</strong> symbols are called{' '}
           <strong>operators</strong>. The first stands for addition, and the
           second stands for multiplication. Putting an operator between two
           values will apply it to those values and produce a new value. But does
           the example mean “add 4 and 100, and multiply the result by 11,” or is
           the multiplication done before the adding? As you might have guessed,
           the multiplication happens first. But as in mathematics, you can
-          change this by wrapping the addition in parentheses:{" "}
+          change this by wrapping the addition in parentheses:{' '}
           <code>(100+4)*11</code>
         </p>
         <p>
@@ -158,7 +157,7 @@ const exos = [
         <p>
           <strong>YOUR TURN !!!</strong> Pikachu wants to use thunder on the
           evil Miaouss. Thunder is a powerful attack with a power of 120 !!!
-          Using the folowing formula{" "}
+          Using the folowing formula{' '}
           <code> damage = power * attack / defense</code> Calculate the damage
           done on the Miaouss.
         </p>
@@ -169,12 +168,12 @@ const exos = [
           </li>
         </ul>
       </div>
-    )
+    ),
   },
   {
     url:
-      "https://codesandbox.io/embed/8x33rv4o50?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
-    title: "Objects",
+      'https://codesandbox.io/embed/8x33rv4o50?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests',
+    title: 'Objects',
     explanation: () => (
       <div className="content">
         <h1>(Almost) Everything is an object !!!</h1>
@@ -205,10 +204,10 @@ const exos = [
         </p>
         <pre>
           let red = &#123;
-          {"\n"} name: "red",
-          {"\n"} badges: 3,
-          {"\n"} pokemons: ["pikachu", "rondoudou", "canarticho"]
-          {"\n"}
+          {'\n'} name: "red",
+          {'\n'} badges: 3,
+          {'\n'} pokemons: ["pikachu", "rondoudou", "canarticho"]
+          {'\n'}
           &#125;
         </pre>
         <p>
@@ -217,7 +216,7 @@ const exos = [
         <img src={objects} alt="Object example" />
         <p>
           You notice that the property <code>pokemons</code> is slightly
-          different from the usual types we have seen until now. We call this an{" "}
+          different from the usual types we have seen until now. We call this an{' '}
           <strong>Array</strong>. An <strong>Array</strong> is a Data Set used
           specifically for storing sequences of values. It is called an array
           and is written as a list of values between square brackets, separated
@@ -238,14 +237,14 @@ const exos = [
         <p>
           Arrays come with a special property called length which gives us the
           number of elements in the array. So to retrieve the last element,
-          knowing the index starts at 0, I just have to seek{" "}
+          knowing the index starts at 0, I just have to seek{' '}
           <code>primeNumbers[primeNumbers.length - 1]</code>
         </p>
         <p>
           <strong>YOUR TURN !!!</strong> Pikachu is super cool, he has plenty of
           attacks and also statistics such as health points, attack, defense,
           speed. We could create several variables for each but instead, let's
-          create an <strong>Object</strong> containing all we need.{" "}
+          create an <strong>Object</strong> containing all we need.{' '}
         </p>
         <p>I want a Pikachu with the folowing properties and values: </p>
         <ul>
@@ -259,23 +258,23 @@ const exos = [
             <code>speed</code> and value <code>110</code>
           </li>
           <li>
-            a list of <code>moves</code> moves including <code>'thunder'</code>,{" "}
+            a list of <code>moves</code> moves including <code>'thunder'</code>,{' '}
             <code>'surf'</code> and <code>'fly'</code>.
           </li>
         </ul>
       </div>
-    )
+    ),
   },
   {
     url:
-      "https://codesandbox.io/embed/v3154o8495?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
-    title: "Functions",
+      'https://codesandbox.io/embed/v3154o8495?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests',
+    title: 'Functions',
     explanation: () => (
       <div className="content">
         <h1>Functions</h1>
         <p>
           We could Calculate the damage every time we need but the actual
-          formula is much more complexe. Instead we can create a{" "}
+          formula is much more complexe. Instead we can create a{' '}
           <strong>function</strong>.
         </p>
         <p>
@@ -285,10 +284,10 @@ const exos = [
         </p>
         <pre>
           let square = function(x) &#123;
-          {"\n"} return x * x;
-          {"\n"}
+          {'\n'} return x * x;
+          {'\n'}
           &#125;
-          {"\n"}
+          {'\n'}
           console.log(square(12)); // → 144
         </pre>
         <p className="is-italic">
@@ -311,18 +310,18 @@ const exos = [
         </p>
         <pre>
           let makeNoise = function() &#123;
-          {"\n"} console.log("La team rocket s'envole vers d'autres cieux !!!");
-          {"\n"}
+          {'\n'} console.log("La team rocket s'envole vers d'autres cieux !!!");
+          {'\n'}
           &#125;
-          {"\n"}
+          {'\n'}
           makeNoise(); // → La team rocket s'envole vers d'autres cieux !!!
-          {"\n"}
-          {"\n"}
+          {'\n'}
+          {'\n'}
           let level = function(experience, coefficient) &#123;
-          {"\n"} return coefficient * experience / 500;
-          {"\n"}
+          {'\n'} return coefficient * experience / 500;
+          {'\n'}
           &#125;
-          {"\n"}
+          {'\n'}
           console.log(level(1000, 4)); // 8
         </pre>
         <p>
@@ -364,7 +363,7 @@ const exos = [
         </p>
         <ul>
           <li>
-            Create a function <code>damage(attacker, defender, move)</code>{" "}
+            Create a function <code>damage(attacker, defender, move)</code>{' '}
             calculating the damage (number)
           </li>
           <li>
@@ -373,12 +372,12 @@ const exos = [
           </li>
         </ul>
       </div>
-    )
+    ),
   },
   {
     url:
-      "https://codesandbox.io/embed/7w42om5z81?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=9",
-    title: "Control flow - if, else",
+      'https://codesandbox.io/embed/7w42om5z81?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=9',
+    title: 'Control flow - if, else',
     explanation: () => (
       <div className="content">
         <h1>Control flow</h1>
@@ -388,9 +387,9 @@ const exos = [
         </p>
         <pre>
           let number = 2;
-          {"\n"}
+          {'\n'}
           let square = number * number;
-          {"\n"}
+          {'\n'}
           console.log(square); //4
         </pre>
         <p>
@@ -403,11 +402,11 @@ const exos = [
         </p>
         <pre>
           let number = 2;
-          {"\n"}
+          {'\n'}
           if(number &#62; 0) &#123;
-          {"\n"} let square = number * number;
-          {"\n"} console.log(square); //4
-          {"\n"}
+          {'\n'} let square = number * number;
+          {'\n'} console.log(square); //4
+          {'\n'}
           &#125;
         </pre>
         <p>
@@ -415,7 +414,7 @@ const exos = [
           displayed.
         </p>
         <p>
-          The statement after the if is wrapped in braces{" "}
+          The statement after the if is wrapped in braces{' '}
           <strong>&#123;</strong> and <strong>&#125;</strong> in this example.
           The braces can be used to group any number of statements into a single
           statement, called a block. You could also have omitted them if the
@@ -426,20 +425,20 @@ const exos = [
         <p>
           You often won’t just have code that executes when a condition holds
           true, but also code that handles the other case. This alternate path
-          is represented by the second arrow in the diagram. You can use the{" "}
+          is represented by the second arrow in the diagram. You can use the{' '}
           <strong>else</strong> keyword, together with <strong>if</strong>, to
           create two separate, alternative execution paths.
         </p>
         <pre>
           let number = "dog";
-          {"\n"}
+          {'\n'}
           if(!Number.isNaN(number)) &#123;
-          {"\n"} let square = number * number;
-          {"\n"} console.log(square);
-          {"\n"}
+          {'\n'} let square = number * number;
+          {'\n'} console.log(square);
+          {'\n'}
           &#125;else&#123;
-          {"\n"} console.log("Ce n'est pas un nombre"); //Ce n'est pas un nombre
-          {"\n"}
+          {'\n'} console.log("Ce n'est pas un nombre"); //Ce n'est pas un nombre
+          {'\n'}
           &#125;
         </pre>
         <p>
@@ -448,21 +447,21 @@ const exos = [
         </p>
         <pre>
           let number = 0;
-          {"\n"}
+          {'\n'}
           if(number &#60; 0) &#123;
-          {"\n"} console.log("Number is negative");
-          {"\n"}
+          {'\n'} console.log("Number is negative");
+          {'\n'}
           &#125;else if(number &#62; 0)&#123;
-          {"\n"} console.log("Number is positive");
-          {"\n"}
+          {'\n'} console.log("Number is positive");
+          {'\n'}
           &#125;else&#123;
-          {"\n"} console.log("Number is 0"); //Number is 0{"\n"}
+          {'\n'} console.log("Number is 0"); //Number is 0{'\n'}
           &#125;
         </pre>
         <p>
           Another way to write simple conditional statement is the use of
-          ternary condition. Written as follow{" "}
-          <strong>condition ? expr1 : expr2</strong> {"\n"}
+          ternary condition. Written as follow{' '}
+          <strong>condition ? expr1 : expr2</strong> {'\n'}
           If condition is true, the operator returns the value of expr1;
           otherwise, it returns the value of expr2.
         </p>
@@ -479,18 +478,18 @@ const exos = [
         </p>
         <ul>
           <li>
-            if moves have already 4 moves, bind to <code>result</code> the value{" "}
+            if moves have already 4 moves, bind to <code>result</code> the value{' '}
             <code>true</code>, otherwise bind the value
             <code>false</code>
           </li>
         </ul>
       </div>
-    )
+    ),
   },
   {
     url:
-      "https://codesandbox.io/embed/qxvon4lw6q?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=2",
-    title: "Control flow - loops",
+      'https://codesandbox.io/embed/qxvon4lw6q?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=2',
+    title: 'Control flow - loops',
     explanation: () => (
       <div className="content">
         <h1>Control flow, second Part</h1>
@@ -499,12 +498,12 @@ const exos = [
           one way to write this:
         </p>
         <pre>
-          console.log(0); {"\n"}
-          console.log(2); {"\n"}
-          console.log(4); {"\n"}
-          console.log(6); {"\n"}
-          console.log(8); {"\n"}
-          console.log(10); {"\n"}
+          console.log(0); {'\n'}
+          console.log(2); {'\n'}
+          console.log(4); {'\n'}
+          console.log(6); {'\n'}
+          console.log(8); {'\n'}
+          console.log(10); {'\n'}
           console.log(12);
         </pre>
         <p>
@@ -514,11 +513,11 @@ const exos = [
           multiple times. This form of control flow is called a loop.
         </p>
         <pre>
-          let number = 0; {"\n"}
+          let number = 0; {'\n'}
           while (number &#8804; 12) &#123;
-          {"\n"} console.log(number);
-          {"\n"} number = number + 2;
-          {"\n"}
+          {'\n'} console.log(number);
+          {'\n'} number = number + 2;
+          {'\n'}
           &#125;
         </pre>
         <p>
@@ -546,8 +545,8 @@ const exos = [
         </p>
         <pre>
           for (let number = 0; number &#8804; 12; number = number + 2) &#123;
-          {"\n"} console.log(number);
-          {"\n"}
+          {'\n'} console.log(number);
+          {'\n'}
           &#125;
         </pre>
         <p>
@@ -569,18 +568,18 @@ const exos = [
         <ul>
           <li>
             Change <code>filterPokemon</code> into a function returning a list
-            of pokemons with less than 8 characters. Example,{" "}
-            <code>filterPokemon(["doduo","roucarnage" ])</code> should return{" "}
+            of pokemons with less than 8 characters. Example,{' '}
+            <code>filterPokemon(["doduo","roucarnage" ])</code> should return{' '}
             <code>["doduo"]</code>
           </li>
         </ul>
       </div>
-    )
+    ),
   },
   {
     url:
-      "https://codesandbox.io/embed/0329r4rkrv?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
-    title: "Time for some practice",
+      'https://codesandbox.io/embed/0329r4rkrv?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests',
+    title: 'Time for some practice',
     explanation: () => (
       <div className="content">
         <h1>Time to attack</h1>
@@ -594,7 +593,7 @@ const exos = [
         </p>
         <ul>
           <li>
-            Create a function{" "}
+            Create a function{' '}
             <code>damage(pikachu, rocketTeamMember, attackName)</code> with
             pikachu and rocketTeamMember being objects and attackName a string.
             If "thunder" is used on a "ground" type, damage returns 0. If "surf"
@@ -603,50 +602,12 @@ const exos = [
           <li> Use surf on all team members using a loop.</li>
         </ul>
       </div>
-    )
-  },
-  {
-    url: "",
-    title: "Const and let",
-    explanation: () => (
-      <div className="content">
-        <h1>Const and let</h1>
-        <p>
-          The words <code>var</code> and <code>const</code> can also be used to
-          create bindings, in a way similar to <code>let</code>.
-        </p>
-        <pre>
-          var name = "Pierre";
-          {"\n"}
-          const greeting = "Hello ";
-          {"\n"}
-          console.log(greeting + name); // Hello Pierre
-        </pre>
-        <p>
-          The first, <code>var</code> (short for “variable”), is the way
-          bindings were declared in pre-2015 JavaScript. But you will see it
-          less often because it has some confusing properties.
-        </p>
-        <p>
-          The word <code>const</code> stands for constant. It defines a constant
-          binding, which points at the same value for as long as it lives. This
-          is useful for bindings that give a name to a value so that you can
-          easily refer to it later.
-        </p>
-        <p>
-          As a good practice, prefer <code>const</code> if you know your binding
-          won't change in the lifetime of your program, otherwise use{" "}
-          <code>let</code>.
-        </p>
-        <p>No practice this time...</p>
-        <img src={ronflex} alt="ronflex" />
-      </div>
-    )
+    ),
   },
   {
     url:
-      "https://codesandbox.io/embed/ox7xl02yrq?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3",
-    title: "Template literal",
+      'https://codesandbox.io/embed/ox7xl02yrq?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3',
+    title: 'Template literal',
     explanation: () => (
       <div className="content">
         <h1>Template literal</h1>
@@ -667,12 +628,12 @@ const exos = [
           </li>
         </ul>
       </div>
-    )
+    ),
   },
   {
     url:
-      "https://codesandbox.io/embed/l5o8n744m?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3",
-    title: "Higher-order functions",
+      'https://codesandbox.io/embed/l5o8n744m?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3',
+    title: 'Higher-order functions',
     explanation: () => (
       <div className="content">
         <h1>Higher-order functions</h1>
@@ -683,7 +644,7 @@ const exos = [
         </p>
         <h2>For each</h2>
         <p>
-          {" "}
+          {' '}
           There is a built-in array method, forEach, that will execute a
           function for each array element.
         </p>
@@ -719,10 +680,10 @@ const exos = [
           these trainers.
         </p>
         <p className="is-italic">
-          There are others functions such as <code>some()</code>,{" "}
+          There are others functions such as <code>some()</code>,{' '}
           <code>reduce()</code> or find which are also particulary useful in
           some cases but not presented here. You might want to take a look at
-          this page for more information:{" "}
+          this page for more information:{' '}
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">
             MDN Firefox
           </a>
@@ -734,12 +695,12 @@ const exos = [
           <li>Find the names of the dragon pokemons. </li>
         </ul>
       </div>
-    )
+    ),
   },
   {
     url:
-      "https://codesandbox.io/embed/4rywynr394?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests",
-    title: "Classes",
+      'https://codesandbox.io/embed/4rywynr394?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests',
+    title: 'Classes',
     explanation: () => (
       <div className="content">
         <h1>Classes</h1>
@@ -747,12 +708,12 @@ const exos = [
           We enter a slightly more advanced side of programming and JavaScript.
           Since the format of this lecture is not appropriate for a complete
           understanding of the language, we will try to keep it simple. However,
-          if you are looking for more depth, we strongly advise you to read{" "}
-          <a href="https://eloquentjavascript.net"> Eloquent JavaScript</a>{" "}
+          if you are looking for more depth, we strongly advise you to read{' '}
+          <a href="https://eloquentjavascript.net"> Eloquent JavaScript</a>{' '}
           where most content of this tutorial come from.
         </p>
         <p>
-          {" "}
+          {' '}
           A <strong>class</strong> defines the shape of a type of object—what
           methods and properties it has. Such an object is called an instance of
           the class.
@@ -788,13 +749,13 @@ const exos = [
         </p>
         <ul>
           <li>
-            Create a class <code>Pokemon</code> with the following properties:{" "}
-            <code>name</code>, <code>attack</code>, <code>defense</code>,{" "}
+            Create a class <code>Pokemon</code> with the following properties:{' '}
+            <code>name</code>, <code>attack</code>, <code>defense</code>,{' '}
             <code>speed</code> and <code>moves</code>
           </li>
         </ul>
       </div>
-    )
-  }
-];
-export default exos;
+    ),
+  },
+]
+export default exos
