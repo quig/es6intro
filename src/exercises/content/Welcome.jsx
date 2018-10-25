@@ -13,7 +13,10 @@ const welcome = {
       <div>
         <p>
           We are so glad to have you here with us in this awesome journey we are
-          about to start together :)
+          about to start together{' '}
+          <span role="img" aria-label="Smiley">
+            🙂
+          </span>
         </p>
         <p>
           Our goal is to introduce you to JavaScript and some awesome things you
@@ -30,12 +33,12 @@ const welcome = {
           account, you can keep a copy of your work.
         </p>
         <p>
-          Have fun and please, don't choose <code>Bulbizarre</code> :/
+          Have fun and please, don't choose <code>Bulbizarre</code> 😐
         </p>
         <p className="is-italic">
           Want to know more about JavaScript ? Take a look at
           <a href="https://eloquentjavascript.net"> Eloquent JavaScript</a>, our
-          source for inspiration for this tutorial :)
+          source for inspiration for this tutorial 🙂
         </p>
       </div>
     </div>
