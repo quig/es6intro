@@ -5,10 +5,10 @@ import strings from '../../assets/strings.png'
 const bindings = {
   url:
     'https://codesandbox.io/embed/v6lyo318m0?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=2,3,4',
-  title: 'Bindings',
+  title: 'Variables',
   explanation: () => (
     <div className="content">
-      <h1>Bindings and Pokemon</h1>
+      <h1>Variables</h1>
       <p>
         Programming consists in the manipulation of data. You can create, read,
         write, store, modify data and so much more. As many other programming

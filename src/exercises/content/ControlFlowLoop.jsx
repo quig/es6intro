@@ -6,7 +6,7 @@ const controlFlowLoop = {
   title: 'Control flow - loops',
   explanation: () => (
     <div className="content">
-      <h1>Control flow, second Part</h1>
+      <h1>Control flow - loops</h1>
       <p>
         Consider a program that outputs all even numbers from 0 to 12. Here is
         one way to write this:

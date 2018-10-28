@@ -3,10 +3,10 @@ import React from 'react'
 const controlFlowIfElse = {
   url:
     'https://codesandbox.io/embed/7w42om5z81?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=9',
-  title: 'Control flow - if, else',
+  title: 'Control flow - conditions',
   explanation: () => (
     <div className="content">
-      <h1>Control flow</h1>
+      <h1>Control flow - conditions</h1>
       <p>
         When your program contains more than one statement, the statements are
         executed as if they are a story, from top to botom.

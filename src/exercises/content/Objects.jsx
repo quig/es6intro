@@ -8,7 +8,7 @@ const objectsContent = {
   title: 'Objects',
   explanation: () => (
     <div className="content">
-      <h1>(Almost) Everything is an object !!!</h1>
+      <h1>Objects</h1>
       <p>
         You may have noticed in one of the previous exercices. We created a
         binding to represent the name of the pokemon Pikachu. Pikachu has also

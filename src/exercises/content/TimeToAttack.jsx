@@ -3,10 +3,10 @@ import React from 'react'
 const timeToAttack = {
   url:
     'https://codesandbox.io/embed/0329r4rkrv?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests',
-  title: 'Time for some practice',
+  title: 'Practice time',
   explanation: () => (
     <div className="content">
-      <h1>Time to attack</h1>
+      <h1>Practice time</h1>
       <p>
         The evil rocket team has a new pokemon !!! A Racaillou !!! Thunder won't
         work on him as he is a ground pokemon. Modify the damage function to

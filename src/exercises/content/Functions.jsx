@@ -3,7 +3,7 @@ import React from 'react'
 const functionsContent = {
   url:
     'https://codesandbox.io/embed/v3154o8495?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests',
-  title: 'Functions',
+  title: 'Functions/Arrow functions (ES6)',
   explanation: () => (
     <div className="content">
       <h1>Functions</h1>
@@ -74,7 +74,7 @@ const functionsContent = {
         values are given by the caller of the function, not the code in the
         function itself.
       </p>
-      <h2>Arrow functions</h2>
+      <h2>Arrow functions (ES6)</h2>
       <p>
         There’s another notation for functions, instead of the function keyword,
         it uses an arrow <code> =></code> made up of an equal sign and a
