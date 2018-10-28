@@ -26,3 +26,11 @@ pre {
 .navigation {
   padding: 3rem;
 }
+
+.oldSyntax {
+  background-color:#ffd6cc
+}
+
+.newSyntax {
+  background-color:#ccffcc
+}
