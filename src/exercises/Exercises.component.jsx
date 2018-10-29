@@ -9,6 +9,7 @@ import controlFlowLoop from './content/ControlFlowLoop'
 import timeToAttack from './content/TimeToAttack'
 import templateLiteral from './content/TemplateLiteral'
 import destructuring from './content/Destructuring'
+import spreadOperator from './content/SpreadOperator'
 import highOrderFunction from './content/HighOrderFunction'
 import classesContent from './content/Classes'
 
@@ -24,6 +25,7 @@ const exos = [
   timeToAttack,
   templateLiteral,
   destructuring,
+  spreadOperator,
   highOrderFunction,
   classesContent,
 ]

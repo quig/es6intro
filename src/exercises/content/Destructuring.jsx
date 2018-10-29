@@ -103,6 +103,7 @@ const destructuring = {
       <p>
         <strong>YOUR TURN !!!</strong>
       </p>
+      <p>You are given a list of pokemons, and for each pokemon, their friendship level with Red and Blue.</p>
       <ul>
         <li>Use array destructuring to extract values from pokemons array into three variables <code>bulbizarre</code>, <code>salameche</code> and <code>carapuce</code> (ignore <code>smogogo</code>)</li>
         <li>Use object destructuring and aliases to extract <code>type</code> and <code>friendshipWithRed</code> from <code>salameche</code> object into variables <code>salamecheType</code> and <code>salamecheFriendshipWithRed</code> respectively</li>
