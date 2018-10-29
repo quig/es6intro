@@ -4,10 +4,10 @@ import classes from '../../assets/classes.png'
 const classesContent = {
   url:
     'https://codesandbox.io/embed/4rywynr394?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests',
-  title: 'Classes',
+  title: 'Classes (ES6)',
   explanation: () => (
     <div className="content">
-      <h1>Classes</h1>
+      <h1>Classes (ES6)</h1>
       <p className="is-italic">
         We enter a slightly more advanced side of programming and JavaScript.
         Since the format of this lecture is not appropriate for a complete

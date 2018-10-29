@@ -4,10 +4,10 @@ import literals from '../../assets/template-literals.png'
 const templateLiteral = {
   url:
     'https://codesandbox.io/embed/ox7xl02yrq?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=3',
-  title: 'Template literal',
+  title: 'Template literals (ES6)',
   explanation: () => (
     <div className="content">
-      <h1>Template literal</h1>
+      <h1>Template literals (ES6)</h1>
       <p>
         Backtick-quoted strings have the ability to embed values. When you write
         something inside <code>$&#123;&#125;</code> in a template literal, its

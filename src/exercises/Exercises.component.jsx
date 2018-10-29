@@ -8,6 +8,7 @@ import controlFlowIfElse from './content/ControlFlowIfElse'
 import controlFlowLoop from './content/ControlFlowLoop'
 import timeToAttack from './content/TimeToAttack'
 import templateLiteral from './content/TemplateLiteral'
+import destructuring from './content/Destructuring'
 import highOrderFunction from './content/HighOrderFunction'
 import classesContent from './content/Classes'
 
@@ -22,6 +23,7 @@ const exos = [
   controlFlowLoop,
   timeToAttack,
   templateLiteral,
+  destructuring,
   highOrderFunction,
   classesContent,
 ]

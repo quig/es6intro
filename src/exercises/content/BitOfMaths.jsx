@@ -3,10 +3,10 @@ import React from 'react'
 const bitOfMaths = {
   url:
     'https://codesandbox.io/embed/jjvkr0xmo9?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=6',
-  title: 'A bit of maths',
+  title: 'Arithmetic operations',
   explanation: () => (
     <div className="content">
-      <h1>A bit of maths</h1>
+      <h1>Arithmetic operations</h1>
       <p>
         The main thing to do with numbers is arithmetic. Arithmetic operations
         such as addition or multiplication take two number values and produce a

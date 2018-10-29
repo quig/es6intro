@@ -3,10 +3,10 @@ import ronflex from '../../assets/ronflex.gif'
 
 const constAndLet = {
   url: '',
-  title: 'Const and let',
+  title: 'Const and let (ES6)',
   explanation: () => (
     <div className="content">
-      <h1>Const and let</h1>
+      <h1>Const and let (ES6)</h1>
       <p>
         The words <code>var</code> and <code>const</code> can also be used to
         create bindings, in a way similar to <code>let</code>.
