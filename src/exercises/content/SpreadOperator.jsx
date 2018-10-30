@@ -2,13 +2,21 @@ import React from "react";
 
 const spreadOperator = {
   url: "https://codesandbox.io/embed/r4wr3p6zxp?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests&highlights=9",
-  title: "Spread Operator (ES6)",
+  title: "Spread operator (ES6)",
   explanation: () => (
     <div className="content">
-      <h1>Spread Operator (ES6)</h1>
+      <h1>Spread operator (ES6)</h1>
       <p>
         Another nice feature introduced by ES6 is the <strong>spread operator</strong> represented by the <code>...</code> syntax. 
         It essentially takes either an array or an object and expands it into its set of items.
+      </p>
+
+      <p>
+        <strong>Spread operator</strong> should not be confused with <strong>rest operator</strong>:
+        <ul>
+          <li>When using spread, you are expanding a single variable (array, object) into more</li>
+          <li>When using rest, you are collapsing all remaining elements (of function arguments for example) into one array</li>
+        </ul>
       </p>
       
       <h2>Spread on array</h2>
