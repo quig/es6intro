@@ -5,7 +5,7 @@ import arrays from '../../assets/arrays.png'
 const objectsContent = {
   url:
     'https://codesandbox.io/embed/8x33rv4o50?codemirror=1&expanddevtools=1&hidenavigation=1&previewwindow=tests',
-  title: 'Objects',
+  title: 'Objects/Arrays',
   explanation: () => (
     <div className="content">
       <h1>Objects</h1>
@@ -44,6 +44,7 @@ const objectsContent = {
         You can then access the property by using the dot-notation, as follow:
       </p>
       <img src={objects} alt="Object example" />
+      <h1>Arrays</h1>
       <p>
         You notice that the property <code>pokemons</code> is slightly different
         from the usual types we have seen until now. We call this an{' '}

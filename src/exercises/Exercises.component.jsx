@@ -1,6 +1,5 @@
 import welcome from './content/Welcome'
 import bindings from './content/Bindings'
-import constAndLet from './content/ConstAndLet'
 import bitOfMaths from './content/BitOfMaths'
 import objectsContent from './content/Objects'
 import functionsContent from './content/Functions'
@@ -17,7 +16,6 @@ import classesContent from './content/Classes'
 const exos = [
   welcome,
   bindings,
-  constAndLet,
   bitOfMaths,
   objectsContent,
   functionsContent,
