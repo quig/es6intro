@@ -12,31 +12,30 @@ const highOrderFunction = {
     <div className="content">
       <h1>Higher-order functions</h1>
       <p>
-        Functions that operate on other functions, either by taking them as
-        arguments or by returning them, are called higher-order functions. One
-        area where higher-order functions shine is data processing.
+        Functions which takes functions as parameter, are called <strong>higher-order functions</strong>. One
+        area where higher-order functions shines is data processing.
       </p>
-      <h2>For each</h2>
+      <h2>forEach: execute function on each element</h2>
       <p>
         {' '}
-        There is a built-in array method, forEach, that will execute a function
-        for each array element.
+        There is a built-in array method <code>forEach</code> that takes as parameter a function that will 
+        be executed on each element of the array.
       </p>
       <img src={foreach} alt="foreach example" />
-      <h2>Filter</h2>
-      <p>It filters out the elements in an array that don’t pass a test.</p>
+      <h2>filter: filter out elements</h2>
+      <p>Built-in array method <code>filter</code> takes as parameter a function that returns a Boolean (we can call it the "test"). 
+      This function is executed on each element of the array. For one element, if it returns <code>True</code>, 
+      element is kept. Otherwise, it is filtered out.</p>
       <img src={filter} alt="filter example" />
       <p>
-        The function uses the argument named test, a function value, to fill a
-        “gap” in the computation, the process of deciding which elements to
-        collect. Note how the filter function, rather than deleting elements
+        Note how the <code>filter</code> function, rather than deleting elements
         from the existing array, builds up a new array with only the elements
         that pass the test. This function is pure. It does not modify the array
         it is given.
       </p>
-      <h2>Map</h2>
+      <h2>map: create a new array with the results of calling a function on each element</h2>
       <p>
-        The map method transforms an array by applying a function to all of its
+        The <code>map</code> method transforms an array by applying a function to all of its
         elements and building a new array from the returned values. The new
         array will have the same length as the input array, but its content will
         have been mapped to a new form by the function.
@@ -55,7 +54,7 @@ const highOrderFunction = {
       </p>
       <p className="is-italic">
         There are others functions such as <code>some()</code>,{' '}
-        <code>reduce()</code> or find which are also particulary useful in some
+        <code>reduce()</code> or <code>find</code> which are also particulary useful in some
         cases but not presented here. You might want to take a look at this page
         for more information:{' '}
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">

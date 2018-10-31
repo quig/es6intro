@@ -24,7 +24,7 @@ const classesContent = {
       </p>
       <p>
         Imagine having a farm of rabbits, each with its own specificities
-        (different name or color for example). You can create a class Rabbit
+        (different name or color for example). You can create a class <code>Rabbit</code>
         representing the definition of what is a rabbit, then instanciate
         rabbits depending on your needs.
       </p>
@@ -33,14 +33,14 @@ const classesContent = {
         The <code>class</code> keyword starts a class declaration, which allows
         us to define a constructor and a set of methods all in a single place.
         Any number of methods may be written inside the declaration’s braces.
-        The one named <strong>constructor</strong> is treated specially. It
+        The one named <code>constructor</code> is treated specially. It
         provides the actual constructor function, which will be bound to the
         name Rabbit. The <code>new</code> keyword allows us to call the
         constructor of the class.
       </p>
       <p className="is-italic">
-        the binding called <code>this</code> in the constructor automatically
-        points at the object that it was called on.
+        The variable called <code>this</code> in the constructor automatically
+        points to the object that it was called on.
       </p>
       <p>
         A class definition can inherit from another class which means share its
