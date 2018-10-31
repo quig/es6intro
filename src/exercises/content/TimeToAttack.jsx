@@ -18,9 +18,9 @@ const timeToAttack = {
       <ul>
         <li>
           Create a function{' '}
-          <code>damage(pikachu, rocketTeamMember, attackName)</code> with
-          <code>pikachu</code> and <code>rocketTeamMember</code> being objects and <code>attackName</code> a string. If
-          "thunder" is used on a "ground" type, damage returns 0. If "surf" is
+          <code>damage(pokemon, rocketTeamMember, attackName)</code> with
+          <code>pokemon</code> and <code>rocketTeamMember</code> being objects and <code>attackName</code> a string. If
+          "thunder" is used on a "ground" type, <code>damage</code> returns 0. If "surf" is
           used on a ground type, the damage is doubled.
         </li>
         <li> Use surf on all team members using a loop.</li>

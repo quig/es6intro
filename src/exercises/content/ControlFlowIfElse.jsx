@@ -48,7 +48,7 @@ const controlFlowIfElse = {
         this.
       </p>
       <p>
-        Most of the times, you won’t just have code that executes when a condition holds
+        Most of the time, you won’t just have code that executes when a condition holds
         true, but also code that handles the other case. You can use the{' '}
         <code>else</code> keyword, together with <code>if</code>, to
         create two separate, alternative execution paths.
@@ -82,9 +82,8 @@ const controlFlowIfElse = {
         &#125;
       </pre>
       <p>
-        Another way to write simple conditional statement is the use of <strong>ternary conditions</strong>. 
-        Written as follow <code>condition ? expr1 : expr2</code>{' '}
-        {'\n'}
+        Another way to write simple conditional statement is the use of <strong>ternary conditions</strong> written 
+        as follow <code>condition ? expr1 : expr2</code>{' '} {'\n'}
         If condition is true, the operator returns the value of <code>expr1</code>;
         otherwise, it returns the value of <code>expr2</code>.
       </p>
@@ -96,14 +95,13 @@ const controlFlowIfElse = {
       <p>
         <strong>YOUR TURN !!!</strong> Pikachu is getting stronger, he wants to
         learn a new move. However, pokemons are not allowed to have more than 4
-        different moves. Change the code to check if pikachu can indeed learn a
+        different moves. Change the code to check if Pikachu can indeed learn a
         new move.
       </p>
       <ul>
         <li>
-          If moves have already 4 moves, bind to <code>result</code> the value{' '}
-          <code>true</code>, otherwise bind the value
-          <code>false</code>
+          Create a function <code>canPokemonLearnANewMove(pokemon)</code> that returns <code>true</code> if 
+          given pokemon can learn a new move, returns <code>false</code> otherwise.
         </li>
       </ul>
     </div>

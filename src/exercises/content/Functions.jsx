@@ -88,7 +88,7 @@ const functionsContent = {
         If the body is a single expression, braces can be omitted. 
         Also <code>return</code> keyword can be omitted in that case. 
         This expression will naturally be returned by the function. 
-        We do personnaly prefer this syntax as it is much more concise
+        We personally prefer this syntax as it is much more concise
         and make the code easier to read.
       </p>
       <pre className="newSyntax">
@@ -99,16 +99,16 @@ const functionsContent = {
       <p>
         <strong>YOUR TURN !!!</strong> Create a function calculating the damage
         and make use of it to launch thunder on Miaouss. Then create another
-        function returning the number of moves pikachu has.
+        function returning the number of moves a pokemon has.
       </p>
       <ul>
         <li>
           Create a function <code>damage(attacker, defender, move)</code>{' '}
-          calculating the damage (which is a number)
+          calculating the damage.
         </li>
         <li>
-          Create a function <code>numberOfMoves()</code> returning the number of
-          moves Pikachu has (which is a number)
+          Create a function <code>numberOfMoves(pokemon)</code> returning the number of
+          moves a pokemon has.
         </li>
       </ul>
     </div>

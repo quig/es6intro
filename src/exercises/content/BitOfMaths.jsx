@@ -21,7 +21,7 @@ const bitOfMaths = {
         example mean “add 4 and 100, and multiply the result by 11” or is the
         multiplication done before the adding? As you might have guessed, the
         multiplication happens first. But as in mathematics, you can change this
-        by wrapping the addition in parentheses: <code>(100+4)*11</code>
+        by wrapping the addition in parentheses: <code>(100 + 4) * 11</code>
       </p>
       <p>
         For subtraction, there is the <strong>-</strong> operator, and division

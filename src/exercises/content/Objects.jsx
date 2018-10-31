@@ -29,7 +29,7 @@ const objectsContent = {
         JavaScript comes with a handy solution called <strong>Classes</strong>,
         but we will come to that later. In the meantime, I'd like to introduce
         you to something called <strong>Objects</strong>. Objects allow us to
-        group values—including other objects—to build more complex structures.
+        group values — including other objects — to build more complex structures.
       </p>
       <p>
         Values of object types are arbitrary collections of properties. One
@@ -70,7 +70,7 @@ const objectsContent = {
       <p>
         Arrays come with a special property called <code>length</code> which gives us the
         number of elements in the array. So to retrieve the last element,
-        knowing the index starts at 0, I just have to seek{' '}
+        knowing the index starts at 0, we just have to seek{' '}
         <code>primeNumbers[primeNumbers.length - 1]</code>
       </p>
       <p>

@@ -37,7 +37,7 @@ const controlFlowLoop = {
       <p>
         A statement starting with the keyword <code>while</code> creates a loop. The 
         word <code>while</code> is followed by an expression in parentheses and then
-        a statement, much like <code>if</code>. The loop keeps executing that statement as
+        a statement block, much like <code>if</code>. The loop keeps executing the statements as
         long as the expression produces a value that gives true when converted
         to Boolean.
       </p>
@@ -45,11 +45,11 @@ const controlFlowLoop = {
         The variable <code>number</code> shows how a variable can be used to track 
         the progress of a program. Every time the loop repeats, <code>number</code> gets 
         incremented by 2. At the beginning of every repetition, it
-        is compared with the number 12 to decide whether we should exit the loop.
+        is compared with the number 12 to decide whether we should exit the loop or not.
       </p>
       <p>
         Many loops follow the pattern shown in the <code>while</code> examples. 
-        First a “counter” binding is created to track the progress of the loop. Then
+        First a “counter” variable is created to track the progress of the loop. Then
         comes a while loop, usually with a test expression that checks whether
         the counter has reached its end value. At the end of the loop body, the
         counter is updated to track progress. Because this pattern is so common,
@@ -83,7 +83,8 @@ const controlFlowLoop = {
           Change <code>filterPokemon</code> into a function returning a list of
           pokemons with less than 8 characters. Example,{' '}
           <code>filterPokemon(["doduo","roucarnage" ])</code> should return{' '}
-          <code>["doduo"]</code>
+          <code>["doduo"]</code>. You might have to use array built-in method <code>push</code> and 
+          property <code>length</code> of a String to have its length.
         </li>
       </ul>
     </div>

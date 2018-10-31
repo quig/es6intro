@@ -18,10 +18,10 @@ const bindings = {
         let player = 'Red'
       </pre>
       <p>
-        Variables are containers for data.
-        <code>let</code> is a special keyword to define a variable. 
+        Variables are containers for 
+        data. <code>let</code> is a special keyword to define a variable. 
         It is followed by the variable name and if we want
-        to immediately assign it a value, we add <strong> = </strong> operator followed by the value.
+        to immediately assign it a value, we add <code>=</code> operator followed by the value.
       </p>
 
       <p>

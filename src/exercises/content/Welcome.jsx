@@ -14,7 +14,7 @@ const welcome = {
       <div>
         <p>
           We are so glad to have you here with us in this awesome journey we are
-          about to start together
+          about to start together.
         </p>
         <p>
           This tutorial was designed to be the material used 
