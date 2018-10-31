@@ -9,29 +9,29 @@ const controlFlowIfElse = {
       <h1>Control flow - conditions</h1>
       <p>
         When your program contains more than one statement, the statements are
-        executed as if they are a story, from top to botom.
+        executed as if they are a story, from top to bottom.
       </p>
       <pre>
-        let number = 2;
+        let number = 2
         {'\n'}
-        let square = number * number;
+        let square = number * number
         {'\n'}
-        console.log(square); //4
+        console.log(square) //4
       </pre>
       <p>
         However, you may want to change the code depending on the situation. For
-        this, you can use what is called a conditional statement. Conditional
-        execution is created with the <strong>if</strong> keyword in JavaScript.
+        this, you can use what is called a <strong>conditional statement</strong>. Conditional
+        execution is created with the <code>if</code> keyword in JavaScript.
         In the simple case, we want some code to be executed if, and only if, a
         certain condition holds. We might, for example, want to show the square
         of the input only if the input is positive.
       </p>
       <pre>
-        let number = 2;
+        let number = 2
         {'\n'}
-        if(number &#62; 0) &#123;
-        {'\n'} let square = number * number;
-        {'\n'} console.log(square); //4
+        if (number &#62; 0) &#123;
+        {'\n'} let square = number * number
+        {'\n'} console.log(square) //4
         {'\n'}
         &#125;
       </pre>
@@ -39,7 +39,7 @@ const controlFlowIfElse = {
         If you change number by a string like "dog", nothing will be displayed.
       </p>
       <p>
-        The statement after the if is wrapped in braces <strong>&#123;</strong>{' '}
+        The statement after the <code>if</code> is wrapped in braces <strong>&#123;</strong>{' '}
         and <strong>&#125;</strong> in this example. The braces can be used to
         group any number of statements into a single statement, called a block.
         You could also have omitted them if the block contained a single
@@ -48,47 +48,45 @@ const controlFlowIfElse = {
         this.
       </p>
       <p>
-        You often won’t just have code that executes when a condition holds
-        true, but also code that handles the other case. This alternate path is
-        represented by the second arrow in the diagram. You can use the{' '}
-        <strong>else</strong> keyword, together with <strong>if</strong>, to
+        Most of the times, you won’t just have code that executes when a condition holds
+        true, but also code that handles the other case. You can use the{' '}
+        <code>else</code> keyword, together with <code>if</code>, to
         create two separate, alternative execution paths.
       </p>
       <pre>
-        let number = "dog";
+        let number = "dog"
         {'\n'}
-        if(!Number.isNaN(number)) &#123;
-        {'\n'} let square = number * number;
-        {'\n'} console.log(square);
+        if (!Number.isNaN(number)) &#123;
+        {'\n'} let square = number * number
+        {'\n'} console.log(square)
         {'\n'}
-        &#125;else&#123;
-        {'\n'} console.log("Ce n'est pas un nombre"); //Ce n'est pas un nombre
+        &#125; else &#123;
+        {'\n'} console.log("Ce n'est pas un nombre") //Ce n'est pas un nombre
         {'\n'}
         &#125;
       </pre>
       <p>
-        If you have more than two paths to choose from, you can “chain” multiple
-        if/else pairs together. Here’s an example:
+        If you have more than two paths to choose from, you can “chain” multiple if/else pairs together. Here’s an example:
       </p>
       <pre>
-        let number = 0;
+        let number = 0
         {'\n'}
-        if(number &#60; 0) &#123;
-        {'\n'} console.log("Number is negative");
+        if (number &#60; 0) &#123;
+        {'\n'} console.log("Number is negative")
         {'\n'}
-        &#125;else if(number &#62; 0)&#123;
-        {'\n'} console.log("Number is positive");
+        &#125; else if (number &#62; 0)&#123;
+        {'\n'} console.log("Number is positive")
         {'\n'}
-        &#125;else&#123;
-        {'\n'} console.log("Number is 0"); //Number is 0{'\n'}
+        &#125; else &#123;
+        {'\n'} console.log("Number is 0") //Number is 0{'\n'}
         &#125;
       </pre>
       <p>
-        Another way to write simple conditional statement is the use of ternary
-        condition. Written as follow <strong>condition ? expr1 : expr2</strong>{' '}
+        Another way to write simple conditional statement is the use of <strong>ternary conditions</strong>. 
+        Written as follow <code>condition ? expr1 : expr2</code>{' '}
         {'\n'}
-        If condition is true, the operator returns the value of expr1;
-        otherwise, it returns the value of expr2.
+        If condition is true, the operator returns the value of <code>expr1</code>;
+        otherwise, it returns the value of <code>expr2</code>.
       </p>
       <pre>number > 0 ? "Number is positive" : "Number is negative" </pre>
       <p>
@@ -103,7 +101,7 @@ const controlFlowIfElse = {
       </p>
       <ul>
         <li>
-          if moves have already 4 moves, bind to <code>result</code> the value{' '}
+          If moves have already 4 moves, bind to <code>result</code> the value{' '}
           <code>true</code>, otherwise bind the value
           <code>false</code>
         </li>

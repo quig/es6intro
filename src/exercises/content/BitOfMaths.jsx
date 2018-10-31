@@ -11,7 +11,7 @@ const bitOfMaths = {
         The main thing to do with numbers is arithmetic. Arithmetic operations
         such as addition or multiplication take two number values and produce a
         new number from them. Here is what they look like in JavaScript:{' '}
-        <code>100+4*11</code>
+        <code>100 + 4 * 11</code>
       </p>
       <p>
         The <strong>+</strong> and <strong>*</strong> symbols are called{' '}

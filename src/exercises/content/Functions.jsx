@@ -18,11 +18,11 @@ const functionsContent = {
       </p>
       <pre>
         let square = function(x) &#123;
-        {'\n'} return x * x;
+        {'\n'} return x * x
         {'\n'}
         &#125;
         {'\n'}
-        console.log(square(12)); // → 144
+        console.log(square(12)) // → 144
       </pre>
       <p className="is-italic">
         console.log() is a function displaying what is given in parameter. Try
@@ -43,7 +43,7 @@ const functionsContent = {
       </p>
       <pre>
         let makeNoise = function() &#123;
-        {'\n'} console.log("La team rocket s'envole vers d'autres cieux !!!");
+        {'\n'} console.log("La team rocket s'envole vers d'autres cieux !!!")
         {'\n'}
         &#125;
         {'\n'}
@@ -51,11 +51,11 @@ const functionsContent = {
         {'\n'}
         {'\n'}
         let level = function(experience, coefficient) &#123;
-        {'\n'} return coefficient * experience / 500;
+        {'\n'} return coefficient * experience / 500
         {'\n'}
         &#125;
         {'\n'}
-        console.log(level(1000, 4)); // 8
+        console.log(level(1000, 4)) // 8
       </pre>
       <p>
         Some functions produce a value, such as <code>level</code> and <code>square</code>, and some
@@ -92,7 +92,7 @@ const functionsContent = {
         and make the code easier to read.
       </p>
       <pre className="newSyntax">
-        let level = (experience, coefficient) => coefficient * experience / 500;
+        let level = (experience, coefficient) => coefficient * experience / 500
       </pre>
       <p>Please also note that if there is only one parameter name, you can omit 
         the parentheses around the parameter list. </p>
