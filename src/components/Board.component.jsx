@@ -40,7 +40,7 @@ export default class Board extends React.Component {
     const disableNext = !this.existNext();
     const listSelect = exos.map((element, index) => (
       <option key={element.title} value={index}>
-        {element.title}
+        {index} - {element.title}
       </option>
     ));
 

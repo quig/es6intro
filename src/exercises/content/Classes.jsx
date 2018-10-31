@@ -8,14 +8,6 @@ const classesContent = {
   explanation: () => (
     <div className="content">
       <h1>Classes (ES6)</h1>
-      <p className="is-italic">
-        We enter a slightly more advanced side of programming and JavaScript.
-        Since the format of this lecture is not appropriate for a complete
-        understanding of the language, we will try to keep it simple. However,
-        if you are looking for more depth, we strongly advise you to read{' '}
-        <a href="https://eloquentjavascript.net"> Eloquent JavaScript</a> where
-        most content of this tutorial come from.
-      </p>
       <p>
         {' '}
         A <strong>class</strong> defines the shape of a type of object—what
