@@ -45,7 +45,7 @@ const classesContent = {
       <p>
         A class definition can inherit from another class which means share its
         properties and methods. Although it is often used in React, we will not
-        dig into inheritence for now.
+        dig into inheritance for now.
       </p>
       <p>
         <strong>YOUR TURN !!!</strong> Pikachu and Miaouss are instances of the

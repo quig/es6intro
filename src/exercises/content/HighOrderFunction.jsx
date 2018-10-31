@@ -65,7 +65,7 @@ const highOrderFunction = {
         <strong>YOUR TURN !!!</strong>
       </p>
       <ul>
-        <li>Find the names of the dragon pokemons. </li>
+        <li>Find the names of the dragon pokemons. You might use array built-in method <code>contains</code>.</li>
       </ul>
     </div>
   ),
