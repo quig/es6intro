@@ -8,13 +8,12 @@ const functionsContent = {
     <div className="content">
       <h1>Functions</h1>
       <p>
-        We could Calculate the damage every time we need but the actual formula
-        is much more complexe. Instead we can create a <strong>function</strong>
-        .
+        We could calculate the damage every time we need but the actual formula
+        is much more complex. Instead, we can create a <strong>function</strong>.
       </p>
       <p>
         A function is a reusable piece of code you can call several times in
-        your program. It is a regular binding where the value of the binding is
+        your program. It is a regular variable where the value of the variable is
         a function. For example:
       </p>
       <pre>
@@ -31,17 +30,16 @@ const functionsContent = {
         its use.
       </p>
       <p>
-        A function is created with an expression that starts with the keyword
-        <code>function</code>. Functions have a set of parameters (in this case,
-        only x) and a body, which contains the statements that are to be
+        A function is created with an expression that starts with the keyword <code>function</code>. 
+        Functions have a set of parameters (in this case, only x) and a body, which contains the statements that are to be
         executed when the function is called. The function body of a function
         created this way must always be wrapped in braces, even when it consists
         of only a single statement.
       </p>
       <p>
         A function can have multiple parameters or no parameters at all. In the
-        following example, makeNoise does not list any parameter names, whereas
-        level lists two:
+        following example, <code>makeNoise</code> does not have any parameter, 
+        whereas <code>level</code> have two parameters:
       </p>
       <pre>
         let makeNoise = function() &#123;
@@ -60,49 +58,57 @@ const functionsContent = {
         console.log(level(1000, 4)); // 8
       </pre>
       <p>
-        Some functions produce a value, such as level and square, and some
-        don’t, such as makeNoise, whose only result is a side effect. A return
-        statement determines the value the function returns. When control comes
+        Some functions produce a value, such as <code>level</code> and <code>square</code>, and some
+        don’t, such as <code>makeNoise</code>, whose only result is a side effect. A <code>return</code> statement 
+        determines the value the function returns. When control comes
         across such a statement, it immediately jumps out of the current
         function and gives the returned value to the code that called the
-        function. A return keyword without an expression after it will cause the
-        function to return undefined. Functions that don’t have a return
-        statement at all, such as makeNoise, similarly return undefined.
+        function. A <code>return</code> keyword without an expression after it, will cause the
+        function to return <code>undefined</code>. Functions that don’t have a return
+        statement at all, such as <code>makeNoise</code>, similarly return <code>undefined</code>.
       </p>
       <p>
-        Parameters to a function behave like regular bindings, but their initial
+        Parameters to a function behave like regular variables, but their initial
         values are given by the caller of the function, not the code in the
         function itself.
       </p>
       <h2>Arrow functions (ES6)</h2>
       <p>
-        There’s another notation for functions, instead of the function keyword,
+        There’s another notation for functions, instead of the <code>function</code> keyword,
         it uses an arrow <code> =></code> made up of an equal sign and a
         greater-than character.
       </p>
-      <pre>
-        let level = (experience, coefficient) => coefficient * experience / 500;
-      </pre>
+      <pre className="newSyntax">
+        let level = (experience, coefficient) => &#123;
+        {'\n'} return coefficient * experience / 500
+        {'\n'}
+        &#125;
+      </pre>      
       <p>
-        When there is only one parameter name, you can omit the parentheses
-        around the parameter list. If the body is a single expression, rather
-        than a block in braces, that expression will be returned from the
-        function. I do personnaly prefer this syntax as it is much more concise
+        If the body is a single expression, braces can be omitted. 
+        Also <code>return</code> keyword can be omitted in that case. 
+        This expression will naturally be returned by the function. 
+        We do personnaly prefer this syntax as it is much more concise
         and make the code easier to read.
       </p>
+      <pre className="newSyntax">
+        let level = (experience, coefficient) => coefficient * experience / 500;
+      </pre>
+      <p>Please also note that if there is only one parameter name, you can omit 
+        the parentheses around the parameter list. </p>
       <p>
         <strong>YOUR TURN !!!</strong> Create a function calculating the damage
-        and make use of it to launch thunder on Meowth. Then create another
+        and make use of it to launch thunder on Miaouss. Then create another
         function returning the number of moves pikachu has.
       </p>
       <ul>
         <li>
           Create a function <code>damage(attacker, defender, move)</code>{' '}
-          calculating the damage (number)
+          calculating the damage (which is a number)
         </li>
         <li>
           Create a function <code>numberOfMoves()</code> returning the number of
-          moves Pikachu has (number)
+          moves Pikachu has (which is a number)
         </li>
       </ul>
     </div>
