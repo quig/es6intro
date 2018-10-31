@@ -23,7 +23,7 @@ const highOrderFunction = {
       </p>
       <img src={foreach} alt="foreach example" />
       <h2>filter: filter out elements</h2>
-      <p>Built-in array method <code>filter</code> takes as parameter a function that returns a Boolean (we can call it the "test"). 
+      <p>Array method <code>filter</code> takes as parameter a function that returns a Boolean (we can call it the "test"). 
       This function is executed on each element of the array. For one element, if it returns <code>True</code>, 
       element is kept. Otherwise, it is filtered out.</p>
       <img src={filter} alt="filter example" />

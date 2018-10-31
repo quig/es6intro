@@ -21,12 +21,12 @@ const exos = [
   functionsContent,
   controlFlowIfElse,
   controlFlowLoop,
-  highOrderFunction,
   timeToAttack,
   templateLiteral,
   destructuring,
   restOperator,
   spreadOperator,
-  classesContent
+  classesContent,
+  highOrderFunction
 ]
 export default exos
