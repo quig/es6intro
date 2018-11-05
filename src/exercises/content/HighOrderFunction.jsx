@@ -18,13 +18,13 @@ const highOrderFunction = {
       <h2>forEach: execute function on each element</h2>
       <p>
         {' '}
-        There is a built-in array method <code>forEach</code> that takes as parameter a function that will 
+        There is a built-in array method <code>forEach</code> that takes as parameter a function that will
         be executed on each element of the array.
       </p>
       <img src={foreach} alt="foreach example" />
       <h2>filter: filter out elements</h2>
-      <p>Array method <code>filter</code> takes as parameter a function that returns a Boolean (we can call it the "test"). 
-      This function is executed on each element of the array. For one element, if it returns <code>True</code>, 
+      <p>Array method <code>filter</code> takes as parameter a function that returns a Boolean (we can call it the "test").
+      This function is executed on each element of the array. For one element, if it returns <code>True</code>,
       element is kept. Otherwise, it is filtered out.</p>
       <img src={filter} alt="filter example" />
       <p>
@@ -65,7 +65,7 @@ const highOrderFunction = {
         <strong>YOUR TURN !!!</strong>
       </p>
       <ul>
-        <li>Find the names of the dragon pokemons. You might use array built-in method <code>contains</code>.</li>
+        <li>Find the names of the dragon pokemons. You might use array built-in method <code>includes</code>.</li>
       </ul>
     </div>
   ),
